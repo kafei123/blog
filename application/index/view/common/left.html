@@ -1,0 +1,36 @@
+<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="{:url('index/search')}" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+						{volist name="hot" id="va"}
+							<li><a href="{:url('index/detail', array('id' => $va.article_id))}">{$va.article_title}</a></li>
+						{/volist}
+					 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 	{volist name="recommend" id="va"}
+							<li><a href="{:url('index/detail', array('id' => $va.article_id))}">{$va.article_title}</a></li>
+						{/volist}
+					 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>

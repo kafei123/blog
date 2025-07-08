@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>咖啡屋少年博客后台管理系统</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">    
+        <link rel="shortcut icon" href="<?php echo base_url() ?>Public/Admin/images/favicon.ico">  
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel='stylesheet' type='text/css'>
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/bootstrap.css">
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/metisMenu.css">
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/font-awesome.css">
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/elegant-icons.css">
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/pe-7-icons.css">
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/pe-7-icons-helper.css">
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/tether-shepherd.css">
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/jstree-default.css">
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/styles.css">
+                <link rel="stylesheet" href="<?php echo base_url() ?>Public/Admin/css/authentication.css">
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head> <body class="layout-no-leftnav">
+        <section class="login-section auth-section">
+    <div class="container">
+        <div class="row">
+            <div class="form-box col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
+                <h1 class="form-box-heading logo text-center">
+                        <span class="pe-icon pe-7s-box2 icon"></span>小罗博客后台管理系统
+                    </h1>
+                
+                <div class="form-box-inner">
+                    <h2 class="title text-center">登 录 到 您 的 帐 户</h2>
+                    <div class="row">
+                        <div class="form-container col-md-5 col-sm-12 col-xs-12" style="width:100%">
+                            <form class="login-form" method="post" action="{:url('blogger/Index/loginPost')}">
+                                <input name="action_mark" value="1" type="hidden" >
+                                <div class="form-group email">
+                                    <label class="sr-only" for="login-email">用户名</label>
+                                    <span class="fa fa-user icon"></span>
+                                    <input id="login-email" name="account" type="text" class="form-control login-email" placeholder="用户名">
+                                </div>
+                                
+                                <div class="form-group password">
+                                    <label class="sr-only" for="login-password">密码</label>
+                                    <span class="fa fa-lock icon"></span>
+                                    <input id="login-password" name="password" type="password" class="form-control login-password" placeholder="密码">
+                                </div>
+
+                                <div class="form-group password">
+                                    <label class="sr-only" for="login-password">验证码</label>
+                                    <input id="code" name="code" type="text" class="form-control" placeholder="验证码" style="display: initial;width: 25%;"><img id="code_img" src="{:url('blogger/index/getCaptcha')}" onclick="document.getElementById('code_img').src='{:url('blogger/index/getCaptcha')}';document.getElementById('code').value='';" />
+                                </div>
+                                
+                                <button type="submit" class="btn btn-block btn-primary">登 录</button>
+                                
+                            </form>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="copyright text-center">
+            &copy; 2017 - 小罗博客后台管理系统
+            <br> 
+        </div>  </div>
+    
+</section>
+        
+                <script src="<?php echo base_url() ?>Public/Admin/js/jquery.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/bootstrap.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/metisMenu.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/imagesloaded.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/masonry.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/pace.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/tether.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/tether-shepherd.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/main.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/tour.js"></script>
+                <script src="<?php echo base_url() ?>Public/Admin/js/demo.js"></script>
+    </body>
+</html>

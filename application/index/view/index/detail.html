@@ -1,0 +1,26 @@
+
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">{$data.article_title}</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">{$data.article_create_time} <span>{$data.article_author}</span>阅读({$data.article_read}) <span>点赞({$data.article_praise})</span> <span>评论({$data.article_comment})</span></p>
+				 	</div>
+				 	{eq name="data.article_is_reprint" value="1"}
+				 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="{$data.article_link}" target="_black">{$data.article_link}</a></p>
+				 	{/eq}
+					<div class="detail_div">
+						{$data.article_detail_content}
+					</div> 
+				 </div>
+			  </div>
+			{include file="common:left"}
+		  </div>
+	  </div>
+</div>
+
+
+	

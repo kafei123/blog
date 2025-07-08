@@ -1,0 +1,80 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>{$title}</title>
+	<link href="{:base_url()}public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="{:base_url()}public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="{:base_url()}public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="{$keywords}" />
+	<meta name="description" content="{$description}" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="{:base_url()}public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="{:url('blogger/index/login')}">登录</a>
+					<a href="{:url('blogger/index/register')}">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="{:base_url()}public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li {eq name="type" value=""}class="active"{/eq}><a href="{:url('index/index')}">首页</a></li>
+						<li {eq name="type" value="PHP"}class="active"{/eq}><a href="{:url('index/articleList', array('type' => 'PHP'))}">PHP</a></li>
+						<li {eq name="type" value="HTML"}class="active"{/eq}><a href="{:url('index/articleList', array('type' => 'HTML'))}">前端</a></li>
+						<li {eq name="type" value="linux"}class="active"{/eq}><a href="{:url('index/articleList', array('type' => 'linux'))}">Linux</a></li>
+						<li {eq name="type" value="Seo"}class="active"{/eq}><a href="{:url('index/articleList', array('type' => 'Seo'))}">SEO</a></li>
+						<li {eq name="type" value="mysql"}class="active"{/eq}><a href="{:url('index/articleList', array('type' => 'mysql'))}">MySql</a></li>
+						<li {eq name="type" value="redis"}class="active"{/eq}><a href="{:url('index/articleList', array('type' => 'redis'))}">Redis</a></li>
+						<li {eq name="type" value="Other"}class="active"{/eq}><a href="{:url('index/articleList', array('type' => 'Other'))}">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>

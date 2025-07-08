@@ -1,0 +1,367 @@
+.from_table{
+	width: 100%;
+}
+.admin_img_width{
+	width: 300px;
+}
+.admin_detail_img_width{
+    width: 100px;
+}
+.clear{
+	clear: both;
+}
+.page_div{
+    min-width: 100px;
+    margin: auto;
+}
+.tc_big{
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 100;
+    height: 100%;
+    display: none;
+}
+.tc_div{
+    width:40%;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: auto;
+    margin-top: 100px;
+}
+.tc_h4{
+    margin-top: 0px;
+    border-bottom: 1px solid #eee;
+    line-height: 200%;
+    font-size: 16px;
+    padding: 10px;
+    background: #fefefe;
+    letter-spacing: 5px;
+    color: #266AAE;
+}
+.tc_text{
+    padding: 10px;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    margin-top: 20px;
+}
+.tc_submit{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.m-imglist ul{
+	-webkit-padding-start: 0px;
+}
+.m-imglist li{
+    float:left;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    padding:5px;
+}
+.m-imglist img{
+    width: 200px;
+    height: 200px;
+}
+.m-imglist p{
+    display: block;
+    width: 50px;
+    min-width: 50px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+ul,li{
+	list-style: none;
+}
+.red{
+	color: red;
+}
+.orange{
+    color: orange;
+}
+.limegreen{
+    color: limegreen;
+}
+.grey{
+    color: grey;
+}
+.green{
+    color: green;
+}
+.yellow{
+    color: yellow;
+}
+.state_border{
+    border: 1px solid;
+    padding: 3px;
+}
+.admin_radio_margin{
+    margin-right: 20px;
+}
+.task_img_div{
+    border: 1px solid #ddd;
+    padding:10px;
+    margin:10px 0;
+}
+.task_img_div h4{
+    border-bottom: 1px solid #eee;
+    margin:10px 0;
+    padding:10px 0;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.task_img_div_p{
+    margin:5px;
+    font-weight: bold;
+}
+.task_img_div_con{
+    margin:5px;
+}
+.task_img_div_radio{
+    text-align: center;
+    margin: 5px 0;
+}
+.flash_table{
+    width:78%;
+    margin:10px 0;
+    height:auto;
+    padding: 0;
+    height:inherit; 
+}
+.flash_table tbody{
+    border: 0;
+}
+.flash_table tr td{
+    padding:10px;
+}
+.pagination li.active span{
+    background-color: #797f8b;
+    border-radius: 0;
+}
+.admin_background{
+    background: #eee;
+}
+.span_div{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: block;
+    float: left;
+}
+.span_div_close{
+    cursor: pointer;
+    color: #aaa;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.li_div{
+    padding: 2px 0px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+}
+
+.admin_btn_a{
+    background: #3aa7aa;
+    color: #fff;
+    padding: 5px 10px;
+}
+.label_left{
+    width:150px;
+}
+.label_right{
+    font-weight: normal;
+    box-shadow: none;
+    border-color: #dadae7;
+    border-radius: 2px;
+    background-clip: padding-box;
+    background: #eee;
+    width: 30%;
+    display: block;
+}
+.label_right img{
+    width: 100%;
+}
+.search_div{
+    margin-bottom: 10px;
+}
+.dataTables_wrapper .dataTables_filter .search_div input{
+    margin-left: 0px;
+}
+.tab tr td{
+    padding: 10px;
+}
+.an_cg a{
+    padding: 10px;
+}
+#info_tbody tr td{
+    padding:15px 10px;
+}
+table.dataTable thead th.thead_tr_th{
+    border-bottom: 1px solid #ddd;
+}
+table.dataTable.no-footer{
+    border-bottom: 1px solid #ddd;
+}
+.background_h{
+    background: #eee;
+}
+.detail_p_css{
+    margin:5px 0;
+}
+.table.dataTable.no-footer{
+    border: 0px;
+}
+table.data_table.dataTable.no-footer td,table.data_table.dataTable.no-footer th{
+    padding: 10px;
+    border:1px solid #eee;
+}
+table.data_table.dataTable.no-footer td p{
+    float: left;
+    width: 140px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #eaeaf1;
+}
+table.dataTable thead th {
+    border-bottom: 1px solid #eaeaf1;
+}
+
+.adddeliverDiv,.big_img{
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 100;
+    height: 100%;
+    display: none;
+}
+.adddeliverDiv_div,.img_div{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    z-index: 810;
+    background: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    width: 30%;
+}
+.adddeliverDiv_title{
+    width: 100%;
+    text-align: center;
+    background: #f6f6f6;
+    line-height: 35px;
+    border-bottom: 1px solid #ddd;
+}
+.company {
+    text-align: left;
+    padding:10px;
+}
+.company p{
+    line-height: 50px;
+    margin: 0px;
+}
+.company p select,.company p input{
+    display: initial;
+    width: 80%;
+}
+.company p input{
+    margin-left: 4px;
+}
+
+.datail_left{
+    display: block;
+    float:left;
+    width: 120px;
+    line-height: 34px;
+}
+.datail_right{
+    float:right;
+    width: 980px;
+    border: 0;
+    margin-bottom: 5px;
+    line-height: 34px;
+    padding: 0px;
+}
+.img_div_gd{
+    height: 100%;
+}
+.img_div{
+    min-width: 30%;
+    max-width: :80px;
+    margin-top: 5px;
+    padding: 5px;
+    height: 100%;
+    overflow: auto;
+}
+
+.img_div img{
+    max-width: 100%;
+}
+
+
+
+.type_left1{
+    padding: 0 10px;
+}
+.type_left2{
+    padding-left:30px;
+    padding-right:10px;
+}
+.type_left3{
+    padding-left:50px;
+    padding-right:10px;
+}
+
+
+.datail_right_table{
+    border: 1px solid #ddd;
+}
+.datail_right_table th,.datail_right_table td{
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding: 10px 10px;
+    font-weight: normal;
+    border-right: 1px solid #ddd;
+}
+.adddeliverDiv, .big_img{
+    z-index: 1111;
+}
+.spec_input_div{
+    margin: 20px 0;
+}
+#spec_div{
+    width: 40%;
+}
+#spec_div_div{
+    width: 70%;
+    margin: auto
+}
+.spec_div_title{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 50px;
+}
