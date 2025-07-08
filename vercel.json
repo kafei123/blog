@@ -1,9 +1,10 @@
 {
     "routes": [
+      { "src": "/\\..+$", "status": 404 },
       { "src": "/.*\\.(ico|css|js|png|jpg|svg)$", "headers": { "Cache-Control": "public, max-age=31536000" } },
       {
         "src": "/.*",
-        "dest": "/index-2.html",
+        "dest": "/index.html",
         "headers": {
           "Cache-Control": "public, max-age=0, must-revalidate"
         }
