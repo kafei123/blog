@@ -1,0 +1,212 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/19.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>【Select2】带搜索框的下拉框美化插件 - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="【Select2】带搜索框的下拉框美化插件 - 【Select2】带搜索框的下拉框美化插件 - 小罗博客" />
+	<meta name="description" content="【Select2】带搜索框的下拉框美化插件 - 【Select2】带搜索框的下拉框美化插件 - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">【Select2】带搜索框的下拉框美化插件</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/7239270.html" target="_black">http://www.cnblogs.com/richerdyoung/p/7239270.html</a></p>
+				 						<div class="detail_div">
+						<p>1 &#xA0;&#x5F15;&#x5165;js css &#x6587;&#x4EF6;</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;js/jquery-1.11.1.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;js/select2.full.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">link </span><span style="color: #ff0000">href</span><span style="color: #0000ff">=&quot;css/select2.css&quot;</span><span style="color: #ff0000"> rel</span><span style="color: #0000ff">=&quot;stylesheet&quot;</span><span style="color: #ff0000"> type</span><span style="color: #0000ff">=&quot;text/css&quot;</span><span style="color: #0000ff">&gt;</span></pre>
+</div>
+<p>&#xA0;</p>
+<p>2 html &#x4EE3;&#x7801;&#xFF1A;</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff">&lt;!</span><span style="color: #ff00ff">DOCTYPE html</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">html</span><span style="color: #0000ff">&gt;</span>
+  <span style="color: #0000ff">&lt;</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">meta </span><span style="color: #ff0000">http-equiv</span><span style="color: #0000ff">=&quot;content-type&quot;</span><span style="color: #ff0000"> content</span><span style="color: #0000ff">=&quot;text/html; charset=utf-8&quot;</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;</span>&#x6F14;&#x793A;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;js/jquery-1.11.1.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+     <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;js/select2.full.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+     <span style="color: #0000ff">&lt;</span><span style="color: #800000">link </span><span style="color: #ff0000">href</span><span style="color: #0000ff">=&quot;css/select2.css&quot;</span><span style="color: #ff0000"> rel</span><span style="color: #0000ff">=&quot;stylesheet&quot;</span><span style="color: #ff0000"> type</span><span style="color: #0000ff">=&quot;text/css&quot;</span><span style="color: #0000ff">&gt;</span>
+  <span style="color: #0000ff">&lt;/</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>
+  <span style="color: #0000ff">&lt;</span><span style="color: #800000">body</span><span style="color: #0000ff">&gt;</span>
+
+  <span style="color: #0000ff">&lt;</span><span style="color: #800000">div </span><span style="color: #ff0000">style</span><span style="color: #0000ff">=&quot;text-align:center;&quot;</span><span style="color: #0000ff">&gt;</span>
+  <span style="color: #0000ff">&lt;</span><span style="color: #800000">h2</span><span style="color: #0000ff">&gt;</span>select2 - &#x5E26;&#x641C;&#x7D22;&#x7684;&#x4E0B;&#x62C9;&#x6846;&#x6F14;&#x793A;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">h2</span><span style="color: #0000ff">&gt;</span>
+  <span style="color: #0000ff">&lt;</span><span style="color: #800000">br</span><span style="color: #0000ff">/&gt;</span>
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">select </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&apos;ss&apos;</span><span style="color: #0000ff">&gt;</span>
+      <span style="color: #0000ff">&lt;</span><span style="color: #800000">option </span><span style="color: #ff0000">value</span><span style="color: #0000ff">=&quot;richerdyoung&quot;</span><span style="color: #0000ff">&gt;</span>richerdyoung<span style="color: #0000ff">&lt;/</span><span style="color: #800000">option</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;/</span><span style="color: #800000">select</span><span style="color: #0000ff">&gt;</span>
+   <span style="color: #0000ff">&lt;/</span><span style="color: #800000">div</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+      //&#x672C;&#x5730;&#x6570;&#x636E;&#x83B7;&#x53D6;    
+      <span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> data </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> [{ id: </span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">php</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">, text: </span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">php</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000"> }, { id: </span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">python</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">, text: </span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">python</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000"> }, { id: </span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">go</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">, text: </span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">go</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000"> }];
+      $(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">#ss</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).select2({
+       data: data,
+       placeholder:</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">&#x8BF7;&#x9009;&#x62E9;</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,
+       allowClear:</span><span style="background-color: #f5f5f5; color: #0000ff">true</span><span style="background-color: #f5f5f5; color: #000000">
+      })
+    </span><span style="color: #0000ff">&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+  <span style="color: #0000ff">&lt;/</span><span style="color: #800000">body</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;/</span><span style="color: #800000">html</span><span style="color: #0000ff">&gt;</span></pre>
+</div>
+<p>&#xA0;</p>
+<p>&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;&#xA0;</p>
+<p><img src="../../images2017.cnblogs.com/blog/1103071/201707/1103071-20170729114221071-405681859.html" alt=""></p>
+<p>&#xA0;</p>
+<p>&#xA0;</p>
+<p>&#x6F14;&#x793A;&#x5730;&#x5740;&#xFF1A; &#xA0;https://www.richerdyoung.cn/select2/</p>
+<p>&#xA0;</p>
+<p>&#xA0;git &#x5730;&#x5740;&#xFF1A;&#xA0;https://github.com/select2/select2/releases</p>
+<p>&#xA0;</p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

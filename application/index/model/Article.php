@@ -6,7 +6,7 @@ use think\Model;
 class Article extends Model{
 
 	// 设置当前模型对应的完整数据表名称
-	protected $table = 'Article';
+	protected $table = 'article';
 	// 设置主键
 	protected $pk = 'article_id';
 	// 开启自动写入时间戳字段

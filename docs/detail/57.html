@@ -1,0 +1,495 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/57.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>MUI 图片上传剪切预览，可选（拍照+系统相册） - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="MUI 图片上传剪切预览，可选（拍照+系统相册） - MUI 图片上传剪切预览，可选（拍照+系统相册） - 小罗博客" />
+	<meta name="description" content="MUI 图片上传剪切预览，可选（拍照+系统相册） - MUI 图片上传剪切预览，可选（拍照+系统相册） - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">MUI 图片上传剪切预览，可选（拍照+系统相册）</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/6617699.html" target="_black">http://www.cnblogs.com/richerdyoung/p/6617699.html</a></p>
+				 						<div class="detail_div">
+						<p>&#x6574;&#x5408;&#x7F51;&#x4E0A;&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x3002;&#x9EBB;&#x86CB;&#x3002;&#x6CA1;&#x8DD1;&#x901A;&#x3002;&#x3002;&#x6CA1;&#x529E;&#x6CD5;&#x3002;&#x81EA;&#x5DF1;&#x5C31;&#x62FF;&#x4ED6;&#x4EEC;&#x7684;&#x4F8B;&#x5B50;&#x5B8C;&#x5584;&#x4E86;&#x4E00;&#x4E0B;&#x3002;&#x3002;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E86;&#xFF01;</p>
+<p>&#xA0;</p>
+<p>&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A; &#x8FD9;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x8981;&#x5F15;&#x5165;&#x3002;&#x7279;&#x522B;&#x662F;JS &#x6587;&#x4EF6;&#xFF01;&#xFF01;&#xFF01;</p>
+<div class="cnblogs_code">
+<pre> <span style="color: #0000ff">&lt;</span><span style="color: #800000">link </span><span style="color: #ff0000">href</span><span style="color: #0000ff">=&quot;../css/mui.min.css&quot;</span><span style="color: #ff0000"> rel</span><span style="color: #0000ff">=&quot;stylesheet&quot;</span> <span style="color: #0000ff">/&gt;</span>
+ <span style="color: #0000ff">&lt;</span><span style="color: #800000">link </span><span style="color: #ff0000">href</span><span style="color: #0000ff">=&quot;../css/cropper.css&quot;</span><span style="color: #ff0000"> rel</span><span style="color: #0000ff">=&quot;stylesheet&quot;</span> <span style="color: #0000ff">/&gt;</span>
+
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/mui.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/app.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/jquery-1.9.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>  
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">script  </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/exif.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/cropper.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span></pre>
+</div>
+<ul>
+<li>app.min.js :&#xA0;https://github.com/kikinteractive/app/tree/master</li>
+<li>cropper.js :&#xA0;https://github.com/fengyuanchen/cropper</li>
+<li>exif.js &#xA0;: &#xA0;https://github.com/exif-js/exif-js</li>
+</ul>
+<p>&#xA0;</p>
+<p>&#xA0;</p>
+<p>1 &#x4E3B;&#x6587;&#x4EF6;&#x7F16;&#x8F91;&#x9875;&#x9762;&#xFF1A; headinfo.html</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff">&lt;!</span><span style="color: #ff00ff">doctype html</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">html</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">meta </span><span style="color: #ff0000">charset</span><span style="color: #0000ff">=&quot;UTF-8&quot;</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;</span>&#x6211;&#x7684;&#x8D44;&#x6599;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">meta </span><span style="color: #ff0000">name</span><span style="color: #0000ff">=&quot;viewport&quot;</span><span style="color: #ff0000"> content</span><span style="color: #0000ff">=&quot;width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no&quot;</span> <span style="color: #0000ff">/&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">link </span><span style="color: #ff0000">href</span><span style="color: #0000ff">=&quot;../css/mui.min.css&quot;</span><span style="color: #ff0000"> rel</span><span style="color: #0000ff">=&quot;stylesheet&quot;</span> <span style="color: #0000ff">/&gt;</span>
+                <span style="color: #0000ff">&lt;</span><span style="color: #800000">style </span><span style="color: #ff0000">type</span><span style="color: #0000ff">=&quot;text/css&quot;</span><span style="color: #0000ff">&gt;</span><span style="background-color: #f5f5f5; color: #800000">
+        
+            
+            #head </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                line-height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 40px</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span><span style="background-color: #f5f5f5; color: #800000">
+            
+            .head-img </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                width</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 40px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 40px</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span><span style="background-color: #f5f5f5; color: #800000">
+            
+            #head-img1 </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                position</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> absolute</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                bottom</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 10px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                right</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 40px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                width</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 40px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 40px</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span>
+            
+          
+        <span style="color: #0000ff">&lt;/</span><span style="color: #800000">style</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;/</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">body</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">header </span><span style="color: #ff0000">class</span><span style="color: #0000ff">=&quot;mui-bar mui-bar-nav&quot;</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">button </span><span style="color: #ff0000">type</span><span style="color: #0000ff">=&quot;button&quot;</span><span style="color: #ff0000"> class</span><span style="color: #0000ff">=&quot;mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left&quot;</span><span style="color: #0000ff">&gt;</span><span style="color: #000000">
+                    &#x5B8C;&#x6210;
+            </span><span style="color: #0000ff">&lt;/</span><span style="color: #800000">button</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">h1 </span><span style="color: #ff0000">class</span><span style="color: #0000ff">=&quot;mui-title&quot;</span><span style="color: #0000ff">&gt;</span>&#x5934;&#x50CF;&#x4FEE;&#x6539;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">h1</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;/</span><span style="color: #800000">header</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">div </span><span style="color: #ff0000">class</span><span style="color: #0000ff">=&quot;mui-content&quot;</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">ul </span><span style="color: #ff0000">class</span><span style="color: #0000ff">=&quot;mui-table-view&quot;</span><span style="color: #0000ff">&gt;</span>
+                <span style="color: #0000ff">&lt;</span><span style="color: #800000">li </span><span style="color: #ff0000">class</span><span style="color: #0000ff">=&quot;mui-table-view-cell&quot;</span><span style="color: #0000ff">&gt;</span>
+                    <span style="color: #0000ff">&lt;</span><span style="color: #800000">a </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&quot;head&quot;</span><span style="color: #ff0000"> class</span><span style="color: #0000ff">=&quot;mui-navigate-right&quot;</span><span style="color: #0000ff">&gt;</span><span style="color: #000000">&#x4E2A;&#x4EBA;&#x5934;&#x50CF;
+                        </span><span style="color: #0000ff">&lt;</span><span style="color: #800000">span </span><span style="color: #ff0000">class</span><span style="color: #0000ff">=&quot;mui-pull-right head&quot;</span><span style="color: #0000ff">&gt;</span>
+                            <span style="color: #0000ff">&lt;</span><span style="color: #800000">img </span><span style="color: #ff0000">class</span><span style="color: #0000ff">=&quot;head-img mui-action-preview&quot;</span><span style="color: #ff0000"> id</span><span style="color: #0000ff">=&quot;head-img1&quot;</span><span style="color: #ff0000"> src</span><span style="color: #0000ff">=&quot;&quot;</span><span style="color: #0000ff">/&gt;</span>
+                        <span style="color: #0000ff">&lt;/</span><span style="color: #800000">span</span><span style="color: #0000ff">&gt;</span>
+                    <span style="color: #0000ff">&lt;/</span><span style="color: #800000">a</span><span style="color: #0000ff">&gt;</span>
+                <span style="color: #0000ff">&lt;/</span><span style="color: #800000">li</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;/</span><span style="color: #800000">ul</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;/</span><span style="color: #800000">div</span><span style="color: #0000ff">&gt;</span>
+
+         <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/mui.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/app.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">type</span><span style="color: #0000ff">=&quot;text/javascript&quot;</span><span style="color: #0000ff">&gt;</span><span style="background-color: #f5f5f5; color: #000000">
+            (</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">($) {
+                $.init();
+                $.plusReady(</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">() {
+                    </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x521D;&#x59CB;&#x5316;&#x5934;&#x50CF;&#xFF0C;&#x548C;&#x9884;&#x89C8;&#x56FE;</span>
+<span style="background-color: #f5f5f5; color: #000000">                    setTimeout(</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">() {
+                        </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x8D4B;&#x503C;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x5934;&#x50CF;</span>
+<span style="background-color: #f5f5f5; color: #000000">                        document.getElementById(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">head-img1</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).src </span><span style="background-color: #f5f5f5; color: #000000">=</span> <span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">../img/add.png</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">;
+                        setTimeout(</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">() {
+                            initImgPreview();
+                        }, </span><span style="background-color: #f5f5f5; color: #000000">200</span><span style="background-color: #f5f5f5; color: #000000">);
+                    }, </span><span style="background-color: #f5f5f5; color: #000000">0</span><span style="background-color: #f5f5f5; color: #000000">);
+
+                    </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x5F39;&#x51FA;&#x83DC;&#x5355;</span>
+<span style="background-color: #f5f5f5; color: #000000">                    mui(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">.mui-table-view-cell</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).on(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">tap</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">#head</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e) {
+                        </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(mui.os.plus) {
+                            </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> a </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> [{
+                                title: </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x62CD;&#x7167;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">
+                            }, {
+                                title: </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x4ECE;&#x624B;&#x673A;&#x76F8;&#x518C;&#x9009;&#x62E9;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">
+                            }];
+                            plus.nativeUI.actionSheet({
+                                title: </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x4FEE;&#x6539;&#x5934;&#x50CF;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">,
+                                cancel: </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x53D6;&#x6D88;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">,
+                                buttons: a
+                            }, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(b) {
+                                </span><span style="background-color: #f5f5f5; color: #0000ff">switch</span><span style="background-color: #f5f5f5; color: #000000">(b.index) {
+                                    </span><span style="background-color: #f5f5f5; color: #0000ff">case</span> <span style="background-color: #f5f5f5; color: #000000">0</span><span style="background-color: #f5f5f5; color: #000000">:
+                                        </span><span style="background-color: #f5f5f5; color: #0000ff">break</span><span style="background-color: #f5f5f5; color: #000000">;
+                                    </span><span style="background-color: #f5f5f5; color: #0000ff">case</span> <span style="background-color: #f5f5f5; color: #000000">1</span><span style="background-color: #f5f5f5; color: #000000">:
+                                        getImage();
+                                        </span><span style="background-color: #f5f5f5; color: #0000ff">break</span><span style="background-color: #f5f5f5; color: #000000">;
+                                    </span><span style="background-color: #f5f5f5; color: #0000ff">case</span> <span style="background-color: #f5f5f5; color: #000000">2</span><span style="background-color: #f5f5f5; color: #000000">:
+                                        galleryImg();
+                                        </span><span style="background-color: #f5f5f5; color: #0000ff">break</span><span style="background-color: #f5f5f5; color: #000000">;
+                                    </span><span style="background-color: #f5f5f5; color: #0000ff">default</span><span style="background-color: #f5f5f5; color: #000000">:
+                                        </span><span style="background-color: #f5f5f5; color: #0000ff">break</span><span style="background-color: #f5f5f5; color: #000000">
+                                }
+                            })
+                        }
+
+                    });
+                });
+
+                </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x62CD;&#x7167;</span>
+                <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> getImage() {
+                    </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> c </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> plus.camera.getCamera();
+                    c.captureImage(</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e) {
+                        </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x5B58;&#x50A8;&#x5230;&#x672C;&#x5730;</span>
+<span style="background-color: #f5f5f5; color: #000000">                        plus.io.resolveLocalFileSystemURL(e, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(entry) {
+                            cutImage(entry.toLocalURL());</span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x88C1;&#x526A;&#x56FE;&#x7247;&#xFF0C;&#x4F20;&#x5165;&#x7EDD;&#x5BF9;&#x5730;&#x5740;</span>
+<span style="background-color: #f5f5f5; color: #000000">                        }, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e) {
+                            console.log(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x8BFB;&#x53D6;&#x62CD;&#x7167;&#x6587;&#x4EF6;&#x9519;&#x8BEF;&#xFF1A;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span> <span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000"> e.message);
+                        });
+                    }, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(s) {
+                        console.log(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">error</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span> <span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000"> s);
+                    }, {
+                        filename: </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">_doc/head.jpg</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">
+                    })
+                }
+
+                </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x76F8;&#x518C;</span>
+                <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> galleryImg() {
+                    plus.gallery.pick(</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(a) {
+                        plus.io.resolveLocalFileSystemURL(a, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(entry) { &#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">entry&#x4E3A;&#x56FE;&#x7247;&#x539F;&#x76EE;&#x5F55;&#xFF08;&#x76F8;&#x518C;&#xFF09;&#x6D41;</span>
+<span style="background-color: #f5f5f5; color: #000000">                            cutImage(entry.toLocalURL());
+                        }, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e) {
+                            console.log(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x8BFB;&#x53D6;&#x56FE;&#x7247;&#x9519;&#x8BEF;&#xFF1A;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span> <span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000"> e.message);
+                        });
+                    }, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(a) {}, {
+                        filter: </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">image</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">
+                    })
+                };
+
+               
+                </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x9884;&#x89C8;&#x56FE;&#xFFFD;&#xFFFD;</span>
+<span style="background-color: #f5f5f5; color: #000000">                document.getElementById(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">head-img1</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).addEventListener(</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">tap</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e) {
+                    e.stopPropagation(); </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x963B;&#x6B62;&#x5192;&#x6CE1;</span>
+<span style="background-color: #f5f5f5; color: #000000">                });
+
+                </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> initImgPreview() {
+                    </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> imgs </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> document.querySelectorAll(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">img.mui-action-preview</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                    imgs </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> mui.slice.call(imgs);
+                    </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(imgs </span><span style="background-color: #f5f5f5; color: #000000">&amp;&amp;</span><span style="background-color: #f5f5f5; color: #000000"> imgs.length </span><span style="background-color: #f5f5f5; color: #000000">&gt;</span> <span style="background-color: #f5f5f5; color: #000000">0</span><span style="background-color: #f5f5f5; color: #000000">) {
+                        </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> slider </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> document.createElement(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">div</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                        slider.setAttribute(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">id</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">__mui-imageview__</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                        slider.classList.add(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">mui-slider</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                        slider.classList.add(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">mui-fullscreen</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                        slider.style.display </span><span style="background-color: #f5f5f5; color: #000000">=</span> <span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">none</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">;
+                        slider.addEventListener(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">tap</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">() {
+                            slider.style.display </span><span style="background-color: #f5f5f5; color: #000000">=</span> <span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">none</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">;
+                        });
+                        slider.addEventListener(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">touchmove</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(event) {
+                            event.preventDefault();
+                        })
+                        </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> slider_group </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> document.createElement(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">div</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                        slider_group.setAttribute(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">id</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">__mui-imageview__group</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                        slider_group.classList.add(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">mui-slider-group</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                        imgs.forEach(</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(value, index, array) {
+                            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x7ED9;&#x56FE;&#x7247;&#x6DFB;&#x52A0;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#xFF0C;&#x89E6;&#x53D1;&#x9884;&#x89C8;&#x663E;&#x793A;&#xFF1B;</span>
+<span style="background-color: #f5f5f5; color: #000000">                            value.addEventListener(</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">tap</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">() {
+                                slider.style.display </span><span style="background-color: #f5f5f5; color: #000000">=</span> <span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">block</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">;
+                                _slider.refresh();
+                                _slider.gotoItem(index, </span><span style="background-color: #f5f5f5; color: #000000">0</span><span style="background-color: #f5f5f5; color: #000000">);
+                            })
+                            </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> item </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> document.createElement(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">div</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                            item.classList.add(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">mui-slider-item</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                            </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> a </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> document.createElement(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">a</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                            </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> img </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> document.createElement(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">img</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                            img.setAttribute(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">src</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">, value.src);
+                            a.appendChild(img)
+                            item.appendChild(a);
+                            slider_group.appendChild(item);
+                        });
+                        slider.appendChild(slider_group);
+                        document.body.appendChild(slider);
+                        </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> _slider </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> mui(slider).slider();
+                    }
+                }
+
+                </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x88C1;&#x526A;&#x56FE;&#x7247;</span>
+                <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> cutImage(path) {
+                    $.openWindow({
+                        url: </span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">cropper.html</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,
+                        id: </span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">cropper</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,
+                        extras: {
+                            path: path,
+                        },
+                        show: {
+                            aniShow: </span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">zoom-fade-in</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,
+                            duration: </span><span style="background-color: #f5f5f5; color: #000000">800</span><span style="background-color: #f5f5f5; color: #000000">
+                        },
+                        waiting: {
+                            autoShow: </span><span style="background-color: #f5f5f5; color: #0000ff">true</span><span style="background-color: #f5f5f5; color: #000000">
+                        }
+                    });
+                }
+                
+                </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x66F4;&#x65B0;&#x7528;&#x6237;&#x5934;&#x50CF;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x88C1;&#x526A;&#x9875;&#x9762;&#x88C1;&#x526A;&#x5B8C;&#x540E;&#x89E6;&#x53D1;&#x7684;</span>
+                <span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x6DFB;&#x52A0;updateHeadImg&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;</span>
+<span style="background-color: #f5f5f5; color: #000000">                window.addEventListener(</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">updateHeadImg</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(event){
+                  </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x83B7;&#x5F97;&#x4E8B;&#x4EF6;&#x53C2;&#x6570;</span>
+                  <span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> my_icon </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> event.detail.img_path;
+                  </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x6839;&#x636E;id&#x5411;&#x670D;&#x52A1;&#x5668;&#x8BF7;&#x6C42;&#x65B0;&#x95FB;&#x8BE6;&#x60C5;</span>
+                  <span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(my_icon </span><span style="background-color: #f5f5f5; color: #000000">!=</span> <span style="background-color: #f5f5f5; color: #000000">&quot;&quot;</span><span style="background-color: #f5f5f5; color: #000000">) {
+                        document.getElementById(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">head-img1</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).src </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> my_icon;
+                        document.querySelector(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">#__mui-imageview__group .mui-slider-item img</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).src </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> my_icon;
+                    }
+                });
+                                
+            })(mui);
+        </span><span style="color: #0000ff">&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;/</span><span style="color: #800000">body</span><span style="color: #0000ff">&gt;</span>
+
+<span style="color: #0000ff">&lt;/</span><span style="color: #800000">html</span><span style="color: #0000ff">&gt;</span></pre>
+</div>
+<p>2 &#x526A;&#x5207;&#x6587;&#x4EF6;&#xFF1A; cropper.html</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff">&lt;!</span><span style="color: #ff00ff">DOCTYPE html</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">html</span><span style="color: #0000ff">&gt;</span>
+
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">meta </span><span style="color: #ff0000">charset</span><span style="color: #0000ff">=&quot;utf-8&quot;</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;</span>&#x88C1;&#x526A;&#x5934;&#x50CF;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">meta </span><span style="color: #ff0000">name</span><span style="color: #0000ff">=&quot;viewport&quot;</span><span style="color: #ff0000"> content</span><span style="color: #0000ff">=&quot;width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no&quot;</span> <span style="color: #0000ff">/&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">link </span><span style="color: #ff0000">href</span><span style="color: #0000ff">=&quot;../css/mui.min.css&quot;</span><span style="color: #ff0000"> rel</span><span style="color: #0000ff">=&quot;stylesheet&quot;</span> <span style="color: #0000ff">/&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">link </span><span style="color: #ff0000">href</span><span style="color: #0000ff">=&quot;../css/cropper.css&quot;</span><span style="color: #ff0000"> rel</span><span style="color: #0000ff">=&quot;stylesheet&quot;</span> <span style="color: #0000ff">/&gt;</span>
+         
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">style </span><span style="color: #ff0000">type</span><span style="color: #0000ff">=&quot;text/css&quot;</span><span style="color: #0000ff">&gt;</span><span style="background-color: #f5f5f5; color: #800000">
+            body </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                background-color</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> #000000</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span><span style="background-color: #f5f5f5; color: #800000">
+            #cropper-example-1 </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                background-color</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> #000000</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 93%</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                width</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 100%</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                position</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> absolute</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span><span style="background-color: #f5f5f5; color: #800000">
+            
+            #quxiao,
+            #xuanzhuan,
+            #xuanqu </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                font-size</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 20px</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span><span style="background-color: #f5f5f5; color: #800000">
+            
+            .divbut </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                width</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 100%</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                text-align</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> center</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                position</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> fixed</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                z-index</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 2</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                bottom</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 0px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                background-color</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> #000000</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 7.5%</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                line-height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 50px</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span><span style="background-color: #f5f5f5; color: #800000">
+            
+            .divbut&gt;div:first-child </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                float</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> left</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                width</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 20%</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span><span style="background-color: #f5f5f5; color: #800000">
+            
+            .divbut&gt;div:last-child </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                float</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> right</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                width</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 20%</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span><span style="background-color: #f5f5f5; color: #800000">
+            
+            img#im </span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">
+                height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 100%</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000">
+                width</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 100%</span><span style="background-color: #f5f5f5; color: #000000">;</span>
+            <span style="background-color: #f5f5f5; color: #000000">}</span>
+        <span style="color: #0000ff">&lt;/</span><span style="color: #800000">style</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;/</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>
+
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">body</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">div </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&quot;cropper-example-1&quot;</span><span style="color: #ff0000"> class</span><span style="color: #0000ff">=&quot;mui-hidden&quot;</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">img </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&quot;im&quot;</span><span style="color: #ff0000"> alt</span><span style="color: #0000ff">=&quot;Picture&quot;</span> <span style="color: #0000ff">/&gt;</span>
+        <span style="color: #0000ff">&lt;/</span><span style="color: #800000">div</span><span style="color: #0000ff">&gt;</span>
+
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">div </span><span style="color: #ff0000">class</span><span style="color: #0000ff">=&quot;divbut&quot;</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">div</span><span style="color: #0000ff">&gt;</span>
+                <span style="color: #0000ff">&lt;</span><span style="color: #800000">p </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&quot;quxiao&quot;</span><span style="color: #ff0000"> class</span><span style="color: #0000ff">=&quot;iconfont icon-quxiao&quot;</span><span style="color: #0000ff">&gt;</span>&#x53D6;&#x6D88;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;/</span><span style="color: #800000">div</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">div</span><span style="color: #0000ff">&gt;</span>
+                <span style="color: #0000ff">&lt;</span><span style="color: #800000">p </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&quot;xuanqu&quot;</span><span style="color: #ff0000"> class</span><span style="color: #0000ff">=&quot;iconfont icon-queding&quot;</span><span style="color: #0000ff">&gt;</span>&#x786E;&#x8BA4;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;/</span><span style="color: #800000">div</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;/</span><span style="color: #800000">div</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">img </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;&quot;</span><span style="color: #ff0000"> alt</span><span style="color: #0000ff">=&quot;&quot;</span><span style="color: #ff0000"> class</span><span style="color: #0000ff">=&quot;mui-hidden&quot;</span><span style="color: #ff0000"> id</span><span style="color: #0000ff">=&quot;im_exif&quot;</span> <span style="color: #0000ff">/&gt;</span>
+
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/jquery-1.9.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>  
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/mui.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script  </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/exif.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/cropper.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/app.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span><span style="background-color: #f5f5f5; color: #000000">
+            (</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(c) {
+                </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> Cro </span><span style="background-color: #f5f5f5; color: #000000">=</span> <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">() {}
+                c.extend(Cro.prototype, {
+                    orientation: </span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">,
+                    urldata: </span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">,
+                    view: </span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">,
+                    num: </span><span style="background-color: #f5f5f5; color: #000000">0</span><span style="background-color: #f5f5f5; color: #000000">,
+                    sbx: </span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">,
+                    sby: </span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">,
+                    n: </span><span style="background-color: #f5f5f5; color: #000000">0</span><span style="background-color: #f5f5f5; color: #000000">,
+                    onReady: </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">() {
+                        </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> that </span><span style="background-color: #f5f5f5; color: #000000">=</span> <span style="background-color: #f5f5f5; color: #0000ff">this</span><span style="background-color: #f5f5f5; color: #000000">;
+                        mui.init();
+                        that.bindEvent();
+                        that.view </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> plus.webview.currentWebview();
+
+                        </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> img </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> document.getElementById(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">im_exif</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                        img.src </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> that.view.path;
+                        img.addEventListener(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">load</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">() {
+                            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">exif&#x8C03;&#x6574;&#x56FE;&#x7247;&#x7684;&#x6A2A;&#x7AD6;</span>
+<span style="background-color: #f5f5f5; color: #000000">                            EXIF.getData(</span><span style="background-color: #f5f5f5; color: #0000ff">this</span><span style="background-color: #f5f5f5; color: #000000">, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">() {
+                                </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> orientation </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> EXIF.getAllTags(</span><span style="background-color: #f5f5f5; color: #0000ff">this</span><span style="background-color: #f5f5f5; color: #000000">).Orientation;
+                                $(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">#im</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).attr(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">src</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">, that.loadcopyImg(img, orientation));
+                                document.getElementById(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">cropper-example-1</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).classList.remove(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">mui-hidden</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">); </					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

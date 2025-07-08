@@ -1,0 +1,192 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:21:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>【Linux】 ftp  主动被动模式 - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="【Linux】 ftp  主动被动模式 - 【Linux】 ftp  主动被动模式 - 小罗博客" />
+	<meta name="description" content="【Linux】 ftp  主动被动模式 - 【Linux】 ftp  主动被动模式 - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">【Linux】 ftp  主动被动模式</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/7486295.html" target="_black">http://www.cnblogs.com/richerdyoung/p/7486295.html</a></p>
+				 						<div class="detail_div">
+						<p>LNMP &#x642D;&#x5EFA;&#x5F97;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5728;&#x4F7F;&#x7528;ftp&#x65F6;&#x5019;&#xFF0C;&#x62A5;&#x5982;&#x4E0B;&#x9519;&#x8BEF;&#xFF1A; &#x7ECF;&#x67E5;&#xFF0C;&#x662F;ftp &#x4E3B;&#x52A8;&#x6A21;&#x5F0F;&#x88AB;&#x52A8;&#x6A21;&#x5F0F;&#x95EE;&#x9898;</p>
+<p>&#xA0;</p>
+<p><img src="../../images2017.cnblogs.com/blog/1103071/201709/1103071-20170906182441522-843034865.html" alt=""></p>
+<p><img src="../../images2017.cnblogs.com/blog/1103071/201709/1103071-20170906182449413-1352123227.html" alt=""></p>
+<p>&#xA0;</p>
+<p>&#x5DE5;&#x5177;&#xFF1A; &#xA0;Xftp5 &#xA0; ,&#x628A;&#x88AB;&#x52A8;&#x6A21;&#x5F0F;&#x52FE; &#x53D6;&#x6D88; &#xFF08;&#x5176;&#x4ED6;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x7F51;&#x4E0A;&#x67E5;&#x4E00;&#x4E0B; &#x76F8;&#x5E94;&#x7684; &#x88AB;&#x52A8;&#x6A21;&#x5F0F;&#x8F6C;&#x4E3B;&#x52A8;&#x6A21;&#x5F0F;&#x8BBE;&#x7F6E;&#x65B9;&#x6CD5;&#xFF09;</p>
+<p><img src="../../images2017.cnblogs.com/blog/1103071/201709/1103071-20170906182641444-1830762518.html" alt=""></p>
+<p>&#xA0;</p>
+<p>&#xA0;</p>
+<p>&#xA0;&#x8FD8;&#x6709;&#x4E00;&#x70B9;&#xFF1A; &#x628A;&#x672C;&#x5730;&#x9632;&#x706B;&#x5899;&#x5173;&#x4E86; &#xA0;&#xFF01;&#xFF01;&#xFF01; &#xA0; &#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x539F;&#x56E0;&#x3002;&#x6211;&#x627E;&#x4E86;&#x534A;&#x5929;&#xFF0C;&#x95EE;&#x4E86;&#x597D;&#x591A;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x90FD;&#x4E0D;&#x884C;&#xFF0C;&#x6700;&#x540E;&#x628A;&#x672C;&#x5730;&#x9632;&#x706B;&#x5899;&#x5173;&#x4E86;&#x3002;&#x53EF;&#x4EE5;&#x4E86;</p>
+<p>&#xA0;</p>
+<p><strong><span style="font-size: 18pt">&#x8865;&#x5145;&#x5B66;&#x4E60;&#xFF1A; ftp&#xA0;FTP&#x4E3B;&#x52A8;&#x6A21;&#x5F0F;&#x548C;&#x88AB;&#x52A8;&#x6A21;&#x5F0F;&#x7684;&#x6BD4;&#x8F83;</span></strong></p>
+<div>FTP&#x662F;&#x4EC5;&#x57FA;&#x4E8E;TCP&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x4E0D;&#x652F;&#x6301;UDP&#x3002;&#x4E0E;&#x4F17;&#x4E0D;&#x540C;&#x7684;&#x662F;FTP&#x4F7F;&#x7528;2&#x4E2A;&#x7AEF;&#x53E3;&#xFF0C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#x548C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x7AEF;&#x53E3;&#xFF08;&#x4E5F;&#x53EF;&#x53EB;&#x505A;&#x63A7;&#x5236;&#x7AEF;&#x53E3;&#xFF09;&#x3002;&#x901A;&#x5E38;&#x6765;&#x8BF4;&#x8FD9;&#x4E24;&#x4E2A;&#x7AEF;&#x53E3;&#x662F;21&#xFF08;&#x547D;&#x4EE4;&#x7AEF;&#x53E3;&#xFF09;&#x548C;20&#xFF08;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#xFF09;&#x3002;&#x4F46;FTP&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#x5E76;&#x4E0D;&#x603B;&#x662F;20&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E3B;&#x52A8;&#x4E0E;&#x88AB;&#x52A8;FTP&#x7684;&#x6700;&#x5927;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x3002;&#xA0;</div>
+<div><br>&#xFF08;&#x4E00;&#xFF09;&#x4E3B;&#x52A8;FTP&#xA0;&#xA0;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#x4E3B;&#x52A8;&#x65B9;&#x5F0F;&#x7684;FTP&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF;&#x4ECE;&#x4E00;&#x4E2A;&#x4EFB;&#x610F;&#x7684;&#x975E;&#x7279;&#x6743;&#x7AEF;&#x53E3;N&#xFF08;N&amp;gt;1024&#xFF09;&#x8FDE;&#x63A5;&#x5230;FTP&#x670D;&#x52A1;&#x5668;&#x7684;&#x547D;&#x4EE4;&#x7AEF;&#x53E3;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;21&#x7AEF;&#x53E3;&#x3002;&#x7136;&#x540E;&#x5BA2;&#x6237;&#x7AEF;&#x5F00;&#x59CB;&#x76D1;&#x542C;&#x7AEF;&#x53E3;N+1&#xFF0C;&#x5E76;&#x53D1;&#x9001;FTP&#x547D;&#x4EE4;&#x201C;port N+1&#x201D;&#x5230;FTP&#x670D;&#x52A1;&#x5668;&#x3002;&#x63A5;&#x7740;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x4ECE;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#xFF08;20&#xFF09;&#x8FDE;&#x63A5;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x6307;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#xFF08;N+1&#xFF09;&#x3002;</div>
+<div>&#xA0;&#xA0;&#xA0; &#x9488;&#x5BF9;FTP&#x670D;&#x52A1;&#x5668;&#x524D;&#x9762;&#x7684;&#x9632;&#x706B;&#x5899;&#x6765;&#x8BF4;&#xFF0C;&#x5FC5;&#x987B;&#x5141;&#x8BB8;&#x4EE5;&#x4E0B;&#x901A;&#x8BAF;&#x624D;&#x80FD;&#x652F;&#x6301;&#x4E3B;&#x52A8;&#x65B9;&#x5F0F;FTP&#xFF1A;&#xA0;&#xA0;&#xA0;&#xA0;</div>
+<div>&#xA0;&#xA0;&#xA0; 1. &#x4EFB;&#x4F55;&#x5927;&#x4E8E;1024&#x7684;&#x7AEF;&#x53E3;&#x5230;FTP&#x670D;&#x52A1;&#x5668;&#x7684;21&#x7AEF;&#x53E3;&#x3002;&#xFF08;&#x5BA2;&#x6237;&#x7AEF;&#x521D;&#x59CB;&#x5316;&#x7684;&#x8FDE;&#x63A5;&#xFF09;&#xA0;&#xA0;<br>&#xA0;&#xA0;&#xA0; 2. FTP&#x670D;&#x52A1;&#x5668;&#x7684;21&#x7AEF;&#x53E3;&#x5230;&#x5927;&#x4E8E;1024&#x7684;&#x7AEF;&#x53E3;&#x3002; &#xFF08;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x63A7;&#x5236;&#x7AEF;&#x53E3;&#xFF09;&#xA0;<br>&#xA0;&#xA0;&#xA0; 3. FTP&#x670D;&#x52A1;&#x5668;&#x7684;20&#x7AEF;&#x53E3;&#x5230;&#x5927;&#x4E8E;1024&#x7684;&#x7AEF;&#x53E3;&#x3002;&#xFF08;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x8FDE;&#x63A5;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#xFF09;</div>
+<div>&#xA0;&#xA0;&#xA0; 4. &#x5927;&#x4E8E;1024&#x7AEF;&#x53E3;&#x5230;FTP&#x670D;&#x52A1;&#x5668;&#x7684;20&#x7AEF;&#x53E3;&#xFF08;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;ACK&#x54CD;&#x5E94;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#xFF09;&#xA0;</div>
+<div>&#xA0;</div>
+<div>&#xA0;&#xA0;&#xA0; &#xFF08;&#x4E8C;&#xFF09;&#x88AB;&#x52A8;FTP&#xA0;&#xA0;<br>&#xA0;&#xA0;&#xA0; &#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x8D77;&#x5230;&#x5BA2;&#x6237;&#x7684;&#x8FDE;&#x63A5;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4EBA;&#x4EEC;&#x5F00;&#x53D1;&#x4E86;&#x4E00;&#x79CD;&#x4E0D;&#x540C;&#x7684;FTP&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;&#x88AB;&#x52A8;&#x65B9;&#x5F0F;&#xFF0C;&#x6216;&#x8005;&#x53EB;&#x505A;PASV&#xFF0C;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x77E5;&#x670D;&#x52A1;&#x5668;&#x5B83;&#x5904;&#x4E8E;&#x88AB;&#x52A8;&#x6A21;&#x5F0F;&#x65F6;&#x624D;&#x542F;&#x7528;&#x3002;</div>
+<div>&#xA0;&#xA0; &#x5728;&#x88AB;&#x52A8;&#x65B9;&#x5F0F;FTP&#x4E2D;&#xFF0C;&#x547D;&#x4EE4;&#x8FDE;&#x63A5;&#x548C;&#x6570;&#x636E;&#x8FDE;&#x63A5;&#x90FD;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#x7684;&#x5165;&#x65B9;&#x5411;&#x8FDE;&#x63A5;&#x88AB;&#x9632;&#x706B;&#x5899;&#x8FC7;&#x6EE4;&#x6389;&#x7684;&#x95EE;&#x9898;&#x3002;</div>
+<div>&#xA0;&#xA0; &#x5F53;&#x5F00;&#x542F;&#x4E00;&#x4E2A; FTP&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x6253;&#x5F00;&#x4E24;&#x4E2A;&#x4EFB;&#x610F;&#x7684;&#x975E;&#x7279;&#x6743;&#x672C;&#x5730;&#x7AEF;&#x53E3;&#xFF08;N &amp;gt; 1024&#x548C;N+1&#xFF09;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x7684;21&#x7AEF;&#x53E3;&#xFF0C;&#x4F46;&#x4E0E;&#x4E3B;&#x52A8;&#x65B9;&#x5F0F;&#x7684;FTP&#x4E0D;&#x540C;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x4F1A;&#x63D0;&#x4EA4;PORT&#x547D;&#x4EE4;&#x5E76;&#x5141;&#x8BB8;&#x670D;&#x52A1;&#x5668;&#x6765;&#x56DE;&#x8FDE;&#x5B83;&#x7684;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#xFF0C;&#x800C;&#x662F;&#x63D0;&#x4EA4; PASV&#x547D;&#x4EE4;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x4EFB;&#x610F;&#x7684;&#x975E;&#x7279;&#x6743;&#x7AEF;&#x53E3;&#xFF08;P &amp;gt; 1024&#xFF09;&#xFF0C;&#x5E76;&#x53D1;&#x9001;PORT P&#x547D;&#x4EE4;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x7136;&#x540E;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x4ECE;&#x672C;&#x5730;&#x7AEF;&#x53E3;N+1&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x7AEF;&#x53E3;P&#x7684;&#x8FDE;&#x63A5;&#x7528;&#x6765;&#x4F20;&#x9001;&#x6570;&#x636E;&#x3002;&#xA0;&#xA0;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#x5BF9;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x9632;&#x706B;&#x5899;&#x6765;&#x8BF4;&#xFF0C;&#x5FC5;&#x987B;&#x5141;&#x8BB8;&#x4E0B;&#x9762;&#x7684;&#x901A;&#x8BAF;&#x624D;&#x80FD;&#x652F;&#x6301;&#x88AB;&#x52A8;&#x65B9;&#x5F0F;&#x7684;FTP:&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</div>
+<div>&#xA0;&#xA0;&#xA0; 1. &#x4ECE;&#x4EFB;&#x4F55;&#x5927;&#x4E8E;1024&#x7684;&#x7AEF;&#x53E3;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;21&#x7AEF;&#x53E3;&#xFF08;&#x5BA2;&#x6237;&#x7AEF;&#x521D;&#x59CB;&#x5316;&#x7684;&#x8FDE;&#x63A5;&#xFF09;&#xA0;&#xA0;<br>&#xA0;&#xA0;&#xA0; 2. &#x670D;&#x52A1;&#x5668;&#x7684;21&#x7AEF;&#x53E3;&#x5230;&#x4EFB;&#x4F55;&#x5927;&#x4E8E;1024&#x7684;&#x7AEF;&#x53E3;&#xFF08;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x63A7;&#x5236;&#x7AEF;&#x53E3;&#x7684;&#x8FDE;&#x63A5;&#xFF09;&#xA0;<br>&#xA0;&#xA0;&#xA0; 3. &#x4ECE;&#x4EFB;&#x4F55;&#x5927;&#x4E8E;1024&#x7AEF;&#x53E3;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5927;&#x4E8E;1024&#x7AEF;&#x53E3;&#xFF08;&#x5BA2;&#x6237;&#x7AEF;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x8FDE;&#x63A5;&#x5230;&#x670D;&#x52A1;&#x5668;&#x6307;&#x5B9A;&#x7684;&#x4EFB;&#x610F;&#x7AEF;&#x53E3;&#xFF09;</div>
+<div>&#xA0;&#xA0;&#xA0; 4. &#x670D;&#x52A1;&#x5668;&#x7684;&#x5927;&#x4E8E;1024&#x7AEF;&#x53E3;&#x5230;&#x8FDC;&#x7A0B;&#x7684;&#x5927;&#x4E8E;1024&#x7684;&#x7AEF;&#x53E3;&#xFF08;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;ACK&#x54CD;&#x5E94;&#x548C;&#x6570;&#x636E;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6570;&#x636E;&#x7AEF;&#x53E3;&#xFF09;</div>
+<div>&#xA0;&#xA0;&#xA0;&#xA0; &#x4EE5;&#x4E0A;&#x5173;&#x4E8E;&#x4E3B;&#x52A8;&#x548C;&#x88AB;&#x52A8;FTP&#x7684;&#x89E3;&#x91CA;&#xFF0C;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x6982;&#x62EC;&#x4E3A;&#x4EE5;&#x4E0B;&#x4E24;&#x70B9;&#xFF1A;</div>
+<div>&#xA0;&#xA0;&#xA0; 1&#x3001;&#x4E3B;&#x52A8;FTP&#xFF1A;&#xA0;&#xA0;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#x547D;&#x4EE4;&#x8FDE;&#x63A5;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF; &amp;gt;1024&#x7AEF;&#x53E3; -&amp;gt; &#x670D;&#x52A1;&#x5668; 21&#x7AEF;&#x53E3;&#xA0;&#xA0;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#x6570;&#x636E;&#x8FDE;&#x63A5;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF; &amp;gt;1024&#x7AEF;&#x53E3; &lt;- &#x670D;&#x52A1;&#x5668; 20&#x7AEF;&#x53E3;&#xA0;<br>&#xA0;&#xA0;&#xA0; 2&#x3001;&#x88AB;&#x52A8;FTP&#xFF1A;&#xA0;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#x547D;&#x4EE4;&#x8FDE;&#x63A5;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF; &gt;1024&#x7AEF;&#x53E3; -&amp;gt; &#x670D;&#x52A1;&#x5668; 21&#x7AEF;&#x53E3;&#xA0;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#x6570;&#x636E;&#x8FDE;&#x63A5;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF; &amp;gt;1024&#x7AEF;&#x53E3; -&amp;gt; &#x670D;&#x52A1;&#x5668; &amp;gt;1024&#x7AEF;&#x53E3;</div>
+<div>&#xA0; &#xFF08;&#x4E09;&#xFF09;&#x4E3B;&#x52A8;&#x4E0E;&#x88AB;&#x52A8;FTP&#x4F18;&#x7F3A;&#x70B9;&#xFF1A;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</div>
+<div>&#xA0;&#xA0; &#x4E3B;&#x52A8;FTP&#x5BF9;FTP&#x670D;&#x52A1;&#x5668;&#x7684;&#x7BA1;&#x7406;&#x6709;&#x5229;&#xFF0C;&#x4F46;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x7BA1;&#x7406;&#x4E0D;&#x5229;&#x3002;&#x56E0;&#x4E3A;FTP&#x670D;&#x52A1;&#x5668;&#x4F01;&#x56FE;&#x4E0E;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x9AD8;&#x4F4D;&#x968F;&#x673A;&#x7AEF;&#x53E3;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x88AB;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x9632;&#x706B;&#x5899;&#x963B;&#x585E;&#x6389;&#x3002;&#x88AB;&#x52A8;FTP&#x5BF9;FTP&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x7BA1;&#x7406;&#x6709;&#x5229;&#xFF0C;&#x4F46;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x7BA1;&#x7406;&#x4E0D;&#x5229;&#x3002;&#x56E0;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x8981;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5EFA;&#x7ACB;&#x4E24;&#x4E2A;&#x8FDE;&#x63A5;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x8FDE;&#x5230;&#x4E00;&#x4E2A;&#x9AD8;&#x4F4D;&#x968F;&#x673A;&#x7AEF;&#x53E3;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x88AB;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x9632;&#x706B;&#x5899;&#x963B;&#x585E;&#x6389;&#x3002;</div>
+<p>&#xA0;</p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

@@ -1,0 +1,315 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/63.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>MUI  分享功能（微信、QQ 、朋友圈） - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="MUI  分享功能（微信、QQ 、朋友圈） - MUI  分享功能（微信、QQ 、朋友圈） - 小罗博客" />
+	<meta name="description" content="MUI  分享功能（微信、QQ 、朋友圈） - MUI  分享功能（微信、QQ 、朋友圈） - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">MUI  分享功能（微信、QQ 、朋友圈）</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/6590235.html" target="_black">http://www.cnblogs.com/richerdyoung/p/6590235.html</a></p>
+				 						<div class="detail_div">
+						<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;manifest.json</p>
+<p>plus -&gt;plugins &#x4E0B;&#x8FB9;</p>
+<div class="cnblogs_code">
+<pre><span style="color: #800000">&quot;</span><span style="color: #800000">share</span><span style="color: #800000">&quot;</span>: {<span style="color: #008000">/*</span><span style="color: #008000">&#x914D;&#x7F6E;&#x5E94;&#x7528;&#x4F7F;&#x7528;&#x5206;&#x4EAB;&#x529F;&#x80FD;&#xFF0C;&#x53C2;&#x8003;http://ask.dcloud.net.cn/article/27</span><span style="color: #008000">*/</span>
+     <span style="color: #800000">&quot;</span><span style="color: #800000">qq</span><span style="color: #800000">&quot;</span><span style="color: #000000">: {
+        </span><span style="color: #800000">&quot;</span><span style="color: #800000">appid</span><span style="color: #800000">&quot;</span>: <span style="color: #800000">&quot;&quot;</span>,<span style="color: #008000">/*</span><span style="color: #008000">&#x817E;&#x8BAF;QQ&#x5F00;&#x653E;&#x5E73;&#x53F0;&#x7533;&#x8BF7;&#x5E94;&#x7528;&#x7684;AppID&#x503C;</span><span style="color: #008000">*/</span>
+        <span style="color: #800000">&quot;</span><span style="color: #800000">description</span><span style="color: #800000">&quot;</span>: <span style="color: #800000">&quot;</span><span style="color: #800000">QQ&#x5206;&#x4EAB;</span><span style="color: #800000">&quot;</span><span style="color: #000000">
+       },
+     </span><span style="color: #800000">&quot;</span><span style="color: #800000">weixin</span><span style="color: #800000">&quot;</span><span style="color: #000000">: {
+         </span><span style="color: #800000">&quot;</span><span style="color: #800000">appid</span><span style="color: #800000">&quot;</span>: <span style="color: #800000">&quot;&quot;</span>,<span style="color: #008000">/*</span><span style="color: #008000">&#x5FAE;&#x4FE1;&#x5F00;&#x653E;&#x5E73;&#x53F0;&#x7533;&#x8BF7;&#x5E94;&#x7528;&#x7684;AppID&#x503C;</span><span style="color: #008000">*/</span>
+         <span style="color: #800000">&quot;</span><span style="color: #800000">appsecret</span><span style="color: #800000">&quot;</span>: <span style="color: #800000">&quot;&quot;</span>,<span style="color: #008000">/*</span><span style="color: #008000">&#x5FAE;&#x4FE1;&#x5F00;&#x653E;&#x5E73;&#x53F0;&#x7533;&#x8BF7;&#x5E94;&#x7528;&#x7684;AppSecret&#x503C;</span><span style="color: #008000">*/</span>
+          <span style="color: #800000">&quot;</span><span style="color: #800000">description</span><span style="color: #800000">&quot;</span>: <span style="color: #800000">&quot;</span><span style="color: #800000">&#x5FAE;&#x4FE1;&#x5206;&#x4EAB;</span><span style="color: #800000">&quot;</span><span style="color: #000000">
+          }
+},                    </span></pre>
+</div>
+<p>&#xA0;</p>
+<p>html &#x4EE3;&#x7801;&#x6587;&#x4EF6;</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff">&lt;</span><span style="color: #800000">html</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">meta </span><span style="color: #ff0000">charset</span><span style="color: #0000ff">=&quot;utf-8&quot;</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">meta </span><span style="color: #ff0000">name</span><span style="color: #0000ff">=&quot;viewport&quot;</span><span style="color: #ff0000"> content</span><span style="color: #0000ff">=&quot;width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no&quot;</span> <span style="color: #0000ff">/&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;</span>&#x9996;&#x9875;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">type</span><span style="color: #0000ff">=&quot;text/javascript&quot;</span><span style="color: #ff0000"> charset</span><span style="color: #0000ff">=&quot;utf-8&quot;</span><span style="color: #0000ff">&gt;</span>
+      
+        <span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> shares</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">;
+        </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> Intent</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">,File</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">,Uri</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">,main</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">;
+        </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000"> H5 plus&#x4E8B;&#x4EF6;&#x5904;&#x7406;</span>
+        <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> plusReady(){
+            updateSerivces();
+            </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(plus.os.name</span><span style="background-color: #f5f5f5; color: #000000">==</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">Android</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">){
+                main </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> plus.android.runtimeMainActivity();
+                Intent </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> plus.android.importClass(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">android.content.Intent</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                File </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> plus.android.importClass(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">java.io.File</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                Uri </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> plus.android.importClass(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">android.net.Uri</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+            }
+        }
+        </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(window.plus){
+            plusReady();
+        }</span><span style="background-color: #f5f5f5; color: #0000ff">else</span><span style="background-color: #f5f5f5; color: #000000">{
+            document.addEventListener(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">plusready</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">,plusReady,</span><span style="background-color: #f5f5f5; color: #0000ff">false</span><span style="background-color: #f5f5f5; color: #000000">);
+        }
+        
+        </span><span style="background-color: #f5f5f5; color: #008000">/*</span><span style="background-color: #f5f5f5; color: #008000">*
+         * 
+         * &#x66F4;&#x65B0;&#x5206;&#x4EAB;&#x670D;&#x52A1;
+         </span><span style="background-color: #f5f5f5; color: #008000">*/</span>
+        <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> updateSerivces(){
+            plus.share.getServices( </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(s){
+                shares</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">{};
+                </span><span style="background-color: #f5f5f5; color: #0000ff">for</span><span style="background-color: #f5f5f5; color: #000000">(</span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> i </span><span style="background-color: #f5f5f5; color: #0000ff">in</span><span style="background-color: #f5f5f5; color: #000000"> s){
+                    </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> t</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">s[i];
+                    shares[t.id]</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">t;
+                }
+            }, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e){
+                alert(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x83B7;&#x53D6;&#x5206;&#x4EAB;&#x670D;&#x52A1;&#x5217;&#x8868;&#x5931;&#x8D25;&#xFF1A;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">e.message );
+            } );
+        }
+        
+        
+        
+        </span><span style="background-color: #f5f5f5; color: #008000">/*</span><span style="background-color: #f5f5f5; color: #008000">*
+           * &#x5206;&#x4EAB;&#x64CD;&#x4F5C;
+           * @param {JSON} sb &#x5206;&#x4EAB;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;s.s&#x4E3A;&#x5206;&#x4EAB;&#x901A;&#x9053;&#x5BF9;&#x8C61;(plus.share.ShareService)
+           * @param {Boolean} bh &#x662F;&#x5426;&#x5206;&#x4EAB;&#x94FE;&#x63A5;
+           </span><span style="background-color: #f5f5f5; color: #008000">*/</span>
+        <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> shareAction(sb,bh) {
+            </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(</span><span style="background-color: #f5f5f5; color: #000000">!</span><span style="background-color: #f5f5f5; color: #000000">sb</span><span style="background-color: #f5f5f5; color: #000000">||!</span><span style="background-color: #f5f5f5; color: #000000">sb.s){
+                alert(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x65E0;&#x6548;&#x7684;&#x5206;&#x4EAB;&#x670D;&#x52A1;&#xFF01;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                </span><span style="background-color: #f5f5f5; color: #0000ff">return</span><span style="background-color: #f5f5f5; color: #000000">;
+            }
+            
+            </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> msg</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">{content:sharehrefDes.value,extra:{scene:sb.x}};
+            </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(bh){
+                msg.href</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">sharehref.value;
+                </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(sharehrefTitle</span><span style="background-color: #f5f5f5; color: #000000">&amp;&amp;</span><span style="background-color: #f5f5f5; color: #000000">sharehrefTitle.value</span><span style="background-color: #f5f5f5; color: #000000">!=</span><span style="background-color: #f5f5f5; color: #000000">&quot;&quot;</span><span style="background-color: #f5f5f5; color: #000000">){
+                    msg.title</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">sharehrefTitle.value;
+                }
+                </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(sharehrefDes</span><span style="background-color: #f5f5f5; color: #000000">&amp;&amp;</span><span style="background-color: #f5f5f5; color: #000000">sharehrefDes.value</span><span style="background-color: #f5f5f5; color: #000000">!=</span><span style="background-color: #f5f5f5; color: #000000">&quot;&quot;</span><span style="background-color: #f5f5f5; color: #000000">){
+                    msg.content</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">sharehrefDes.value;
+                }
+                msg.thumbs</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">[</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">_www/logo.png</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">];
+                msg.pictures</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">[</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">_www/logo.png</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">];
+            }</span><span style="background-color: #f5f5f5; color: #0000ff">else</span><span style="background-color: #f5f5f5; color: #000000">{
+                </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(pic</span><span style="background-color: #f5f5f5; color: #000000">&amp;&amp;</span><span style="background-color: #f5f5f5; color: #000000">pic.realUrl){
+                    msg.pictures</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">[pic.realUrl];
+                }
+            }
+            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000"> &#x53D1;&#x9001;&#x5206;&#x4EAB;</span>
+            <span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000"> ( sb.s.authenticated ) {
+                alert(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">---&#x5DF2;&#x6388;&#x6743;---</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                shareMessage(msg,sb.s);
+            } </span><span style="background-color: #f5f5f5; color: #0000ff">else</span><span style="background-color: #f5f5f5; color: #000000"> {
+                alert(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">---&#x672A;&#x6388;&#x6743;---</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                sb.s.authorize( </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(){
+                        shareMessage(msg,sb.s);
+                    },</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e){
+                        alert(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x5931;&#x8D25;&#xFF1A;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">e.code</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000"> - </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">e.message );
+                    
+                });
+            }
+        }
+        </span><span style="background-color: #f5f5f5; color: #008000">/*</span><span style="background-color: #f5f5f5; color: #008000">*
+           * &#x53D1;&#x9001;&#x5206;&#x4EAB;&#x6D88;&#x606F;
+           * @param {JSON} msg
+           * @param {plus.share.ShareService} s
+           </span><span style="background-color: #f5f5f5; color: #008000">*/</span>
+        <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> shareMessage(msg,s){
+            
+            alert(JSON.stringify(msg));
+            s.send( msg, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(){
+                alert(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x5206;&#x4EAB;&#x5230;\&quot;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">s.description</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">\&quot;&#x6210;&#x529F;&#xFF01; </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000"> );
+                
+            }, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e){
+                alert( </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x5206;&#x4EAB;&#x5230;\&quot;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">s.description</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">\&quot;&#x5931;&#x8D25;: </span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">JSON.stringify(e) );
+            
+            } );
+        }
+        </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000"> &#x5206;&#x6790;&#x94FE;&#x63A5;</span>
+        <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> shareHref(){
+            </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> shareBts</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">[];
+            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000"> &#x66F4;&#x65B0;&#x5206;&#x4EAB;&#x5217;&#x8868;</span>
+            <span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> ss</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">shares[</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">weixin</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">];
+            ss</span><span style="background-color: #f5f5f5; color: #000000">&amp;&amp;</span><span style="background-color: #f5f5f5; color: #000000">ss.nativeClient</span><span style="background-color: #f5f5f5; color: #000000">&amp;&amp;</span><span style="background-color: #f5f5f5; color: #000000">(shareBts.push({title:</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">&#x5FAE;&#x4FE1;&#x670B;&#x53CB;&#x5708;</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,s:ss,x:</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">WXSceneTimeline</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">}),
+            shareBts.push({title:</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">&#x5FAE;&#x4FE1;&#x597D;&#x53CB;</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,s:ss,x:</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">WXSceneSession</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">}));
+            ss</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">shares[</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">qq</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">];
+            ss</span><span style="background-color: #f5f5f5; color: #000000">&amp;&amp;</span><span style="background-color: #f5f5f5; color: #000000">ss.nativeClient</span><span style="background-color: #f5f5f5; color: #000000">&amp;&amp;</span><span style="background-color: #f5f5f5; color: #000000">shareBts.push({title:</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">QQ</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,s:ss});
+            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000"> &#x5F39;&#x51FA;&#x5206;&#x4EAB;&#x5217;&#x8868;</span>
+<span style="background-color: #f5f5f5; color: #000000">            shareBts.length</span><span style="background-color: #f5f5f5; color: #000000">&gt;</span><span style="background-color: #f5f5f5; color: #000000">0</span><span style="background-color: #f5f5f5; color: #000000">?</span><span style="background-color: #f5f5f5; color: #000000">plus.nativeUI.actionSheet({title:</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">&#x5206;&#x4EAB;&#x94FE;&#x63A5;</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,cancel:</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">&#x53D6;&#x6D88;</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">,buttons:shareBts},</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e){
+                (e.index</span><span style="background-color: #f5f5f5; color: #000000">&gt;</span><span style="background-color: #f5f5f5; color: #000000">0</span><span style="background-color: #f5f5f5; color: #000000">)</span><span style="background-color: #f5f5f5; color: #000000">&amp;&amp;</span><span style="background-color: #f5f5f5; color: #000000">shareAction(shareBts[e.index</span><span style="background-color: #f5f5f5; color: #000000">-</span><span style="background-color: #f5f5f5; color: #000000">1</span><span style="background-color: #f5f5f5; color: #000000">],</span><span style="background-color: #f5f5f5; color: #0000ff">true</span><span style="background-color: #f5f5f5; color: #000000">);
+            }):plus.nativeUI.alert(</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">&#x5F53;&#x524D;&#x73AF;&#x5883;&#x65E0;&#x6CD5;&#x652F;&#x6301;&#x5206;&#x4EAB;&#x94FE;&#x63A5;&#x64CD;&#x4F5C;!</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">);
+        }
+        
+        </span><span style="color: #0000ff">&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>
+    <span style="color: #0000ff">&lt;/</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>
+
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">body</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #008000">&lt;!--</span><span style="color: #008000"> &#x4E3B;&#x9875;&#x9762;&#x6807;&#x9898; </span><span style="color: #008000">--&gt;</span>    
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span>&#x94FE;&#x63A5;&#x5730;&#x5740;&#xFF1A;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">input </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&quot;sharehref&quot;</span><span style="color: #ff0000">  type</span><span style="color: #0000ff">=&quot;url&quot;</span><span style="color: #ff0000"> value</span><span style="color: #0000ff">=&quot;http://www.baidu.com/&quot;</span> <span style="color: #0000ff">/&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span>&#x94FE;&#x63A5;&#x6807;&#x9898;&#xFF1A;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">input </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&quot;sharehrefTitle&quot;</span><span style="color: #ff0000">  type</span><span style="color: #0000ff">=&quot;text&quot;</span><span style="color: #ff0000"> value</span><span style="color: #0000ff">=&quot;title&quot;</span> <span style="color: #0000ff">/&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span>&#x94FE;&#x63A5;&#x63CF;&#x8FF0;&#xFF1A;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span>
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">input </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&quot;sharehrefDes&quot;</span><span style="color: #ff0000">  type</span><span style="color: #0000ff">=&quot;text&quot;</span><span style="color: #ff0000"> value</span><span style="color: #0000ff">=&quot;test&quot;</span><span style="color: #0000ff">/&gt;&lt;/</span><span style="color: #800000">br</span><span style="color: #0000ff">&gt;</span>
+            
+            <span style="color: #0000ff">&lt;</span><span style="color: #800000">button </span><span style="color: #ff0000">type</span><span style="color: #0000ff">=&quot;button&quot;</span><span style="color: #ff0000"> onclick</span><span style="color: #0000ff">=&quot;shareHref()&quot;</span><span style="color: #0000ff">&gt;</span> &#x5206;&#x4EAB;&#x94FE;&#x63A5;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">button</span><span style="color: #0000ff">&gt;</span>
+
+    <span style="color: #0000ff">&lt;/</span><span style="color: #800000">body</span><span style="color: #0000ff">&gt;</span>
+<span style="color: #0000ff">&lt;/</span><span style="color: #800000">html</span><span style="color: #0000ff">&gt;</span></pre>
+</div>
+<p>&#xA0;</p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

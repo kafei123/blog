@@ -1,0 +1,180 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/79.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Linux下安装memcached - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Linux下安装memcached - Linux下安装memcached - 小罗博客" />
+	<meta name="description" content="Linux下安装memcached - Linux下安装memcached - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">Linux下安装memcached</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/6382067.html" target="_black">http://www.cnblogs.com/richerdyoung/p/6382067.html</a></p>
+				 						<div class="detail_div">
+						<p>&#x3010;&#x51C6;&#x5907;&#x3011;<br>memcached-1.4.15.tar.gz<br>http://memcached.googlecode.com/files/memcached-1.4.15.tar.gz</p>
+<p>libevent-2.0.21-stable.tar.gz<br>https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz</p>
+<p>Memcache&#x7684;PHP&#x6269;&#x5C55;<br>http://pecl.php.net/package/memcache<br>http://pecl.php.net/get/memcache-2.2.7.tgz</p>
+<p>&#x3010;&#x5B89;&#x88C5;libevent&#x3011;<br>tar zxvf libevent-2.0.21-stable.tar.gz<br>cd libevent-2.0.21-stable<br>./configure --prefix=/usr/local/libevent<br>make<br>make install</p>
+<p>&#x3010;&#x5B89;&#x88C5;memcached&#x3011;<br>tar zxvf memcached-1.4.15.tar.gz<br>cd memcached-1.4.15<br>./configure --prefix=/usr/local/memcached --with-libevent=/usr/local/libevent/<br>make<br>make install</p>
+<p><br>&#x3010;&#x5B89;&#x88C5;Memcache&#x7684;PHP&#x6269;&#x5C55;&#x3011;<br>tar vxzf memcache-2.2.7.tgz <br>cd memcache-2.2.7 <br>/usr/local/php/bin/phpize<br>./configure --enable-memcache --with-php-config=/usr/local/php/bin/php-config --with-zlib-dir <br>make <br>make install</p>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x540E;&#x63D0;&#x793A;&#xFF1A;<br>Installing shared extensions:     /usr/local/php/lib/php/extensions/no-debug-zts-20100525/<br>&#xFF08;&#x8868;&#x793A;&#x6269;&#x5C55;&#x5DF2;&#x7ECF;&#x7F16;&#x8BD1;&#x5230; /usr/local/php/lib/php/extensions/no-debug-zts-20100525/ &#x76EE;&#x5F55;&#x4E0B;&#xFF09;</p>
+<p>&#x628A;php.ini&#x4E2D;&#x7684; extension_dir = &#x201C;./&#x201D;&#x4FEE;&#x6539;&#x4E3A;<br>extension_dir = &quot;/usr/local/php/lib/php/extensions/no-debug-zts-20100525/&quot;</p>
+<p>&#x6DFB;&#x52A0;&#x4E00;&#x884C;&#x6765;&#x8F7D;&#x5165;memcache&#x6269;&#x5C55;&#xFF1A;extension=memcache.so</p>
+<p>&#x91CD;&#x542F;apache</p>
+<p><br>&#x3010;Memcached&#x670D;&#x52A1;&#x7AEF;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#x3011;</p>
+<p>vi /etc/rc.d/rc.local<br>&#x52A0;&#x4E00;&#x884C;&#xFF1A;<br>/usr/local/memcached/bin/memcached -d -m 100 -u tenonewww -l 59.63.169.65 -p 11211 -c 256 -P /tmp/memcached.pid</p>
+<p>-d&#x9009;&#x9879;&#x662F;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#xFF0C;<br>-m&#x662F;&#x5206;&#x914D;&#x7ED9;Memcache&#x4F7F;&#x7528;&#x7684;&#x5185;&#x5B58;&#x6570;&#x91CF;&#xFF0C;&#x5355;&#x4F4D;&#x662F;MB&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x662F;10MB&#xFF0C;<br>-u&#x662F;&#x8FD0;&#x884C;Memcache&#x7684;&#x7528;&#x6237;&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x662F;root&#xFF0C;<br>-l&#x662F;&#x76D1;&#x542C;&#x7684;&#x670D;&#x52A1;&#x5668;IP&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x5730;&#x5740;&#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x6307;&#x5B9A;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x7684;IP&#x5730;&#x5740;192.168.0.200&#xFF0C;<br>-p&#x662F;&#x8BBE;&#x7F6E;Memcache&#x76D1;&#x542C;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x8BBE;&#x7F6E;&#x4E86;12000&#xFF0C;&#x6700;&#x597D;&#x662F;1024&#x4EE5;&#x4E0A;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;<br>-c&#x9009;&#x9879;&#x662F;&#x6700;&#x5927;&#x8FD0;&#x884C;&#x7684;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;1024&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x8BBE;&#x7F6E;&#x4E86;256&#xFF0C;&#x6309;&#x7167;&#x4F60;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8D1F;&#x8F7D;&#x91CF;&#x6765;&#x8BBE;&#x5B9A;&#xFF0C;<br>-P&#x662F;&#x8BBE;&#x7F6E;&#x4FDD;&#x5B58;Memcache&#x7684;pid&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x662F;&#x4FDD;&#x5B58;&#x5728; /tmp/memcached.pid&#xFF0C;</p>
+<p>&#xA0;</p>
+<p>&#xA0;</p>
+<p>&#x58F0;&#x660E;&#xFF1A;&#x6458;&#x6284;&#x4ED6;&#x4EBA;&#xFF0C;&#x4EC5;&#x4F9B;&#x4E2A;&#x4EBA;&#x5B66;&#x4E60;&#x7559;&#x5B58;&#xFF01;</p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

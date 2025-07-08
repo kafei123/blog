@@ -1,0 +1,200 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/62.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>PHP计算时间差，并返回什么时间之前发表的内容 - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="PHP计算时间差，并返回什么时间之前发表的内容 - PHP计算时间差，并返回什么时间之前发表的内容 - 小罗博客" />
+	<meta name="description" content="PHP计算时间差，并返回什么时间之前发表的内容 - PHP计算时间差，并返回什么时间之前发表的内容 - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">PHP计算时间差，并返回什么时间之前发表的内容</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/6598351.html" target="_black">http://www.cnblogs.com/richerdyoung/p/6598351.html</a></p>
+				 						<div class="detail_div">
+						<div class="cnblogs_code">
+<pre>&lt;?<span style="color: #000000">php
+</span><span style="color: #008080">header</span>(&quot;Content-type: text/html; charset=utf-8&quot;<span style="color: #000000">); 
+</span><span style="color: #0000ff">function</span> time2Units (<span style="color: #800080">$time</span><span style="color: #000000">){
+&#x3000;&#x3000;</span><span style="color: #800080">$year</span> = <span style="color: #008080">floor</span>(<span style="color: #800080">$time</span> / 60 / 60 / 24 / 365<span style="color: #000000">);
+&#x3000;&#x3000;</span><span style="color: #800080">$time</span> -= <span style="color: #800080">$year</span> * 60 * 60 * 24 * 365<span style="color: #000000">;
+&#x3000;&#x3000;</span><span style="color: #800080">$month</span> = <span style="color: #008080">floor</span>(<span style="color: #800080">$time</span> / 60 / 60 / 24 / 30<span style="color: #000000">);
+&#x3000;&#x3000;</span><span style="color: #800080">$time</span> -= <span style="color: #800080">$month</span> * 60 * 60 * 24 * 30<span style="color: #000000">;
+&#x3000;&#x3000;</span><span style="color: #800080">$week</span> = <span style="color: #008080">floor</span>(<span style="color: #800080">$time</span> / 60 / 60 / 24 / 7<span style="color: #000000">);
+&#x3000;&#x3000;</span><span style="color: #800080">$time</span> -= <span style="color: #800080">$week</span> * 60 * 60 * 24 * 7<span style="color: #000000">;
+&#x3000;&#x3000;</span><span style="color: #800080">$day</span> = <span style="color: #008080">floor</span>(<span style="color: #800080">$time</span> / 60 / 60 / 24<span style="color: #000000">);
+&#x3000;&#x3000;</span><span style="color: #800080">$time</span> -= <span style="color: #800080">$day</span> * 60 * 60 * 24<span style="color: #000000">;
+&#x3000;&#x3000;</span><span style="color: #800080">$hour</span> = <span style="color: #008080">floor</span>(<span style="color: #800080">$time</span> / 60 / 60<span style="color: #000000">);
+&#x3000;&#x3000;</span><span style="color: #800080">$time</span> -= <span style="color: #800080">$hour</span> * 60 * 60<span style="color: #000000">;
+&#x3000;&#x3000;</span><span style="color: #800080">$minute</span> = <span style="color: #008080">floor</span>(<span style="color: #800080">$time</span> / 60<span style="color: #000000">);
+&#x3000;&#x3000;</span><span style="color: #800080">$time</span> -= <span style="color: #800080">$minute</span> * 60<span style="color: #000000">;
+&#x3000;&#x3000;</span><span style="color: #800080">$second</span> = <span style="color: #800080">$time</span><span style="color: #000000">;
+&#x3000;&#x3000;</span><span style="color: #800080">$elapse</span> = &apos;&apos;<span style="color: #000000">;
+&#x3000;&#x3000;</span><span style="color: #800080">$unitArr</span> = <span style="color: #0000ff">array</span>(&apos;&#x5E74;&apos; =&gt;&apos;year&apos;, &apos;&#x4E2A;&#x6708;&apos;=&gt;&apos;month&apos;, &apos;&#x5468;&apos;=&gt;&apos;week&apos;, &apos;&#x5929;&apos;=&gt;&apos;day&apos;,
+&#x3000;&#x3000;&#x3000;&#x3000;&apos;&#x5C0F;&#x65F6;&apos;=&gt;&apos;hour&apos;, &apos;&#x5206;&#x949F;&apos;=&gt;&apos;minute&apos;, &apos;&#x79D2;&apos;=&gt;&apos;second&apos;<span style="color: #000000">
+&#x3000;&#x3000;);
+&#x3000;&#x3000;</span><span style="color: #0000ff">foreach</span> ( <span style="color: #800080">$unitArr</span> <span style="color: #0000ff">as</span> <span style="color: #800080">$cn</span> =&gt; <span style="color: #800080">$u</span><span style="color: #000000"> ){
+&#x3000;&#x3000;&#x3000;&#x3000;</span><span style="color: #0000ff">if</span> ( $<span style="color: #800080">$u</span> &gt; 0<span style="color: #000000"> ){
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</span><span style="color: #800080">$elapse</span> = $<span style="color: #800080">$u</span> . <span style="color: #800080">$cn</span><span style="color: #000000">;
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</span><span style="color: #0000ff">break</span><span style="color: #000000">;
+&#x3000;&#x3000;&#x3000;&#x3000;}
+&#x3000;&#x3000;}
+&#x3000;&#x3000;</span><span style="color: #0000ff">return</span> <span style="color: #800080">$elapse</span><span style="color: #000000">;<br>}
+</span><span style="color: #800080">$past</span> = <span style="color: #008080">strtotime</span>(&quot;2015-01-12 21:49:00&quot;); <span style="color: #008000">//</span><span style="color: #008000"> Some timestamp in the past</span>
+<span style="color: #800080">$now</span> = <span style="color: #008080">time</span>(); <span style="color: #008000">//</span><span style="color: #008000"> Current timestamp</span>
+<span style="color: #800080">$diff</span> = <span style="color: #800080">$now</span> - <span style="color: #800080">$past</span><span style="color: #000000">;
+</span><span style="color: #0000ff">echo</span> &apos;&#x53D1;&#x8868;&#x4E8E;&apos; . time2Units(<span style="color: #800080">$diff</span>) . &apos;&#x524D;&apos;<span style="color: #000000">;
+
+</span>?&gt;</pre>
+</div>
+<p>&#xA0;</p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

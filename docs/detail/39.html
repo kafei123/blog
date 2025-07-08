@@ -1,0 +1,267 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/39.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>微信红包随机生成算法（PHP版） - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="微信红包随机生成算法（PHP版） - 微信红包随机生成算法（PHP版） - 小罗博客" />
+	<meta name="description" content="微信红包随机生成算法（PHP版） - 微信红包随机生成算法（PHP版） - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">微信红包随机生成算法（PHP版）</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/6845402.html" target="_black">http://www.cnblogs.com/richerdyoung/p/6845402.html</a></p>
+				 						<div class="detail_div">
+						<div class="cnblogs_code">
+<pre><span style="color: #008000">/*</span><span style="color: #008000">* 
+ * &#x6C42;&#x4E00;&#x4E2A;&#x6570;&#x7684;&#x5E73;&#x65B9; 
+ * @param $n 
+ </span><span style="color: #008000">*/</span>  
+<span style="color: #0000ff">function</span> sqr(<span style="color: #800080">$n</span><span style="color: #000000">){  
+    </span><span style="color: #0000ff">return</span> <span style="color: #800080">$n</span>*<span style="color: #800080">$n</span><span style="color: #000000">;  
+}  
+  
+</span><span style="color: #008000">/*</span><span style="color: #008000">* 
+* &#x751F;&#x4EA7;min&#x548C;max&#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x6982;&#x7387;&#x4E0D;&#x662F;&#x5E73;&#x5747;&#x7684;&#xFF0C;&#x4ECE;min&#x5230;max&#x65B9;&#x5411;&#x6982;&#x7387;&#x9010;&#x6E10;&#x52A0;&#x5927;&#x3002; 
+* &#x5148;&#x5E73;&#x65B9;&#xFF0C;&#x7136;&#x540E;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5E73;&#x65B9;&#x503C;&#x8303;&#x56F4;&#x5185;&#x7684;&#x968F;&#x673A;&#x6570;&#xFF0C;&#x518D;&#x5F00;&#x65B9;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4EA7;&#x751F;&#x4E86;&#x4E00;&#x79CD;&#x201C;&#x81A8;&#x80C0;&#x201D;&#x518D;&#x201C;&#x6536;&#x7F29;&#x201D;&#x7684;&#x6548;&#x679C;&#x3002; 
+</span><span style="color: #008000">*/</span>    
+<span style="color: #0000ff">function</span> xRandom(<span style="color: #800080">$bonus_min</span>,<span style="color: #800080">$bonus_max</span><span style="color: #000000">){  
+    </span><span style="color: #800080">$sqr</span> = <span style="color: #008080">intval</span>(sqr(<span style="color: #800080">$bonus_max</span>-<span style="color: #800080">$bonus_min</span><span style="color: #000000">));  
+    </span><span style="color: #800080">$rand_num</span> = <span style="color: #008080">rand</span>(0, (<span style="color: #800080">$sqr</span>-1<span style="color: #000000">));  
+    </span><span style="color: #0000ff">return</span> <span style="color: #008080">intval</span>(<span style="color: #008080">sqrt</span>(<span style="color: #800080">$rand_num</span><span style="color: #000000">));  
+}  
+  
+  
+ </span><span style="color: #008000">/*</span><span style="color: #008000">* 
+ *   
+ * @param $bonus_total &#x7EA2;&#x5305;&#x603B;&#x989D; 
+ * @param $bonus_count &#x7EA2;&#x5305;&#x4E2A;&#x6570; 
+ * @param $bonus_max &#x6BCF;&#x4E2A;&#x5C0F;&#x7EA2;&#x5305;&#x7684;&#x6700;&#x5927;&#x989D; 
+ * @param $bonus_min &#x6BCF;&#x4E2A;&#x5C0F;&#x7EA2;&#x5305;&#x7684;&#x6700;&#x5C0F;&#x989D; 
+ * @return &#x5B58;&#x653E;&#x751F;&#x6210;&#x7684;&#x6BCF;&#x4E2A;&#x5C0F;&#x7EA2;&#x5305;&#x7684;&#x503C;&#x7684;&#x4E00;&#x7EF4;&#x6570;&#x7EC4; 
+ </span><span style="color: #008000">*/</span>    
+<span style="color: #0000ff">function</span> getBonus(<span style="color: #800080">$bonus_total</span>, <span style="color: #800080">$bonus_count</span>, <span style="color: #800080">$bonus_max</span>, <span style="color: #800080">$bonus_min</span><span style="color: #000000">) {    
+    </span><span style="color: #800080">$result</span> = <span style="color: #0000ff">array</span><span style="color: #000000">();    
+  
+    </span><span style="color: #800080">$average</span> = <span style="color: #800080">$bonus_total</span> / <span style="color: #800080">$bonus_count</span><span style="color: #000000">;    
+  
+    </span><span style="color: #800080">$a</span> = <span style="color: #800080">$average</span> - <span style="color: #800080">$bonus_min</span><span style="color: #000000">;    
+    </span><span style="color: #800080">$b</span> = <span style="color: #800080">$bonus_max</span> - <span style="color: #800080">$bonus_min</span><span style="color: #000000">;    
+  
+    </span><span style="color: #008000">//</span><span style="color: #008000">    
+    //&#x8FD9;&#x6837;&#x7684;&#x968F;&#x673A;&#x6570;&#x7684;&#x6982;&#x7387;&#x5B9E;&#x9645;&#x6539;&#x53D8;&#x4E86;&#xFF0C;&#x4EA7;&#x751F;&#x5927;&#x6570;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x8981;&#x6BD4;&#x4EA7;&#x751F;&#x5C0F;&#x6570;&#x7684;&#x6982;&#x7387;&#x8981;&#x5C0F;&#x3002;    
+    //&#x8FD9;&#x6837;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#x5927;&#x90E8;&#x5206;&#x7EA2;&#x5305;&#x7684;&#x503C;&#x5728;&#x5E73;&#x5747;&#x6570;&#x9644;&#x8FD1;&#x3002;&#x5927;&#x7EA2;&#x5305;&#x548C;&#x5C0F;&#x7EA2;&#x5305;&#x6BD4;&#x8F83;&#x5C11;&#x3002;    </span>
+    <span style="color: #800080">$range1</span> = sqr(<span style="color: #800080">$average</span> - <span style="color: #800080">$bonus_min</span><span style="color: #000000">);    
+    </span><span style="color: #800080">$range2</span> = sqr(<span style="color: #800080">$bonus_max</span> - <span style="color: #800080">$average</span><span style="color: #000000">);    
+  
+    </span><span style="color: #0000ff">for</span> (<span style="color: #800080">$i</span> = 0; <span style="color: #800080">$i</span> &lt; <span style="color: #800080">$bonus_count</span>; <span style="color: #800080">$i</span>++<span style="color: #000000">) {    
+        </span><span style="color: #008000">//</span><span style="color: #008000">&#x56E0;&#x4E3A;&#x5C0F;&#x7EA2;&#x5305;&#x7684;&#x6570;&#x91CF;&#x901A;&#x5E38;&#x662F;&#x8981;&#x6BD4;&#x5927;&#x7EA2;&#x5305;&#x7684;&#x6570;&#x91CF;&#x8981;&#x591A;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x91CC;&#x7684;&#x6982;&#x7387;&#x8981;&#x8C03;&#x6362;&#x8FC7;&#x6765;&#x3002;    
+        //&#x5F53;&#x968F;&#x673A;&#x6570;&gt;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x5219;&#x4EA7;&#x751F;&#x5C0F;&#x7EA2;&#x5305;    
+        //&#x5F53;&#x968F;&#x673A;&#x6570;&lt;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x5219;&#x4EA7;&#x751F;&#x5927;&#x7EA2;&#x5305;    </span>
+        <span style="color: #0000ff">if</span> (<span style="color: #008080">rand</span>(<span style="color: #800080">$bonus_min</span>, <span style="color: #800080">$bonus_max</span>) &gt; <span style="color: #800080">$average</span><span style="color: #000000">) {    
+            </span><span style="color: #008000">//</span><span style="color: #008000"> &#x5728;&#x5E73;&#x5747;&#x7EBF;&#x4E0A;&#x51CF;&#x94B1;    </span>
+            <span style="color: #800080">$temp</span> = <span style="color: #800080">$bonus_min</span> + xRandom(<span style="color: #800080">$bonus_min</span>, <span style="color: #800080">$average</span><span style="color: #000000">);    
+            </span><span style="color: #800080">$result</span>[<span style="color: #800080">$i</span>] = <span style="color: #800080">$temp</span><span style="color: #000000">;    
+            </span><span style="color: #800080">$bonus_total</span> -= <span style="color: #800080">$temp</span><span style="color: #000000">;    
+        } </span><span style="color: #0000ff">else</span><span style="color: #000000"> {    
+            </span><span style="color: #008000">//</span><span style="color: #008000"> &#x5728;&#x5E73;&#x5747;&#x7EBF;&#x4E0A;&#x52A0;&#x94B1;    </span>
+            <span style="color: #800080">$temp</span> = <span style="color: #800080">$bonus_max</span> - xRandom(<span style="color: #800080">$average</span>, <span style="color: #800080">$bonus_max</span><span style="color: #000000">);    
+            </span><span style="color: #800080">$result</span>[<span style="color: #800080">$i</span>] = <span style="color: #800080">$temp</span><span style="color: #000000">;    
+            </span><span style="color: #800080">$bonus_total</span> -= <span style="color: #800080">$temp</span><span style="color: #000000">;    
+        }    
+    }    
+    </span><span style="color: #008000">//</span><span style="color: #008000"> &#x5982;&#x679C;&#x8FD8;&#x6709;&#x4F59;&#x94B1;&#xFF0C;&#x5219;&#x5C1D;&#x8BD5;&#x52A0;&#x5230;&#x5C0F;&#x7EA2;&#x5305;&#x91CC;&#xFF0C;&#x5982;&#x679C;&#x52A0;&#x4E0D;&#x8FDB;&#x53BB;&#xFF0C;&#x5219;&#x5C1D;&#x8BD5;&#x4E0B;&#x4E00;&#x4E2A;&#x3002;    </span>
+    <span style="color: #0000ff">while</span> (<span style="color: #800080">$bonus_total</span> &gt; 0<span style="color: #000000">) {    
+        </span><span style="color: #0000ff">for</span> (<span style="color: #800080">$i</span> = 0; <span style="color: #800080">$i</span> &lt; <span style="color: #800080">$bonus_count</span>; <span style="color: #800080">$i</span>++<span style="color: #000000">) {    
+            </span><span style="color: #0000ff">if</span> (<span style="color: #800080">$bonus_total</span> &gt; 0 &amp;&amp; <span style="color: #800080">$result</span>[<span style="color: #800080">$i</span>] &lt; <span style="color: #800080">$bonus_max</span><span style="color: #000000">) {    
+                </span><span style="color: #800080">$result</span>[<span style="color: #800080">$i</span>]++<span style="color: #000000">;    
+                </span><span style="color: #800080">$bonus_total</span>--<span style="color: #000000">;    
+            }    
+        }    
+    }    
+    </span><span style="color: #008000">//</span><span style="color: #008000"> &#x5982;&#x679C;&#x94B1;&#x662F;&#x8D1F;&#x6570;&#x4E86;&#xFF0C;&#x8FD8;&#x5F97;&#x4ECE;&#x5DF2;&#x751F;&#x6210;&#x7684;&#x5C0F;&#x7EA2;&#x5305;&#x4E2D;&#x62BD;&#x53D6;&#x56DE;&#x6765;    </span>
+    <span style="color: #0000ff">while</span> (<span style="color: #800080">$bonus_total</span> &lt; 0<span style="color: #000000">) {    
+        </span><span style="color: #0000ff">for</span> (<span style="color: #800080">$i</span> = 0; <span style="color: #800080">$i</span> &lt; <span style="color: #800080">$bonus_count</span>; <span style="color: #800080">$i</span>++<span style="color: #000000">) {    
+            </span><span style="color: #0000ff">if</span> (<span style="color: #800080">$bonus_total</span> &lt; 0 &amp;&amp; <span style="color: #800080">$result</span>[<span style="color: #800080">$i</span>] &gt; <span style="color: #800080">$bonus_min</span><span style="color: #000000">) {    
+                </span><span style="color: #800080">$result</span>[<span style="color: #800080">$i</span>]--<span style="color: #000000">;    
+                </span><span style="color: #800080">$bonus_total</span>++<span style="color: #000000">;    
+            }    
+        }    
+    }    
+    </span><span style="color: #0000ff">return</span> <span style="color: #800080">$result</span><span style="color: #000000">;    
+}  
+</span><span style="color: #800080">$bonus_total</span> = 200<span style="color: #000000">;  
+</span><span style="color: #800080">$bonus_count</span> = 100<span style="color: #000000">;  
+</span><span style="color: #800080">$bonus_max</span> = 10;<span style="color: #008000">//</span><span style="color: #008000">&#x6B64;&#x7B97;&#x6CD5;&#x8981;&#x6C42;&#x8BBE;&#x7F6E;&#x7684;&#x6700;&#x5927;&#x503C;&#x8981;&#x5927;&#x4E8E;&#x5E73;&#x5747;&#x503C;  </span>
+<span style="color: #800080">$bonus_min</span> = 1<span style="color: #000000">;  
+</span><span style="color: #800080">$result_bonus</span> = getBonus(<span style="color: #800080">$bonus_total</span>, <span style="color: #800080">$bonus_count</span>, <span style="color: #800080">$bonus_max</span>, <span style="color: #800080">$bonus_min</span><span style="color: #000000">);  
+</span><span style="color: #800080">$total_money</span> = 0<span style="color: #000000">;  
+</span><span style="color: #800080">$arr</span> = <span style="color: #0000ff">array</span><span style="color: #000000">();  
+</span><span style="color: #0000ff">foreach</span> (<span style="color: #800080">$result_bonus</span> <span style="color: #0000ff">as</span> <span style="color: #800080">$key</span> =&gt; <span style="color: #800080">$value</span><span style="color: #000000">) {  
+    </span><span style="color: #800080">$total_money</span> += <span style="color: #800080">$value</span><span style="color: #000000">;  
+    </span><span style="color: #0000ff">if</span>(<span style="color: #0000ff">isset</span>(<span style="color: #800080">$arr</span>[<span style="color: #800080">$value</span><span style="color: #000000">])){  
+        </span><span style="color: #800080">$arr</span>[<span style="color: #800080">$value</span>] += 1<span style="color: #000000">;  
+    }</span><span style="color: #0000ff">else</span><span style="color: #000000">{  
+        </span><span style="color: #800080">$arr</span>[<span style="color: #800080">$value</span>] = 1<span style="color: #000000">;  
+    }  
+      
+}  
+</span><span style="color: #008000">//</span><span style="color: #008000">&#x8F93;&#x51FA;&#x603B;&#x94B1;&#x6570;&#xFF0C;&#x67E5;&#x770B;&#x662F;&#x5426;&#x4E0E;&#x8BBE;&#x7F6E;&#x7684;&#x603B;&#x6570;&#x76F8;&#x540C;  </span>
+<span style="color: #0000ff">echo</span> <span style="color: #800080">$total_money</span><span style="color: #000000">;  
+</span><span style="color: #008000">//</span><span style="color: #008000">&#x8F93;&#x51FA;&#x6240;&#x6709;&#x968F;&#x673A;&#x7EA2;&#x5305;&#x503C;  </span>
+<span style="color: #008080">var_dump</span>(<span style="color: #800080">$result_bonus</span><span style="color: #000000">);  
+</span><span style="color: #008000">//</span><span style="color: #008000">&#x7EDF;&#x8BA1;&#x6BCF;&#x4E2A;&#x94B1;&#x6570;&#x7684;&#x7EA2;&#x5305;&#x6570;&#x91CF;&#xFF0C;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x63A5;&#x8FD1;&#x6B63;&#x6001;&#x5206;&#x5E03;  </span>
+<span style="color: #008080">ksort</span>(<span style="color: #800080">$arr</span><span style="color: #000000">);  
+</span><span style="color: #008080">var_dump</span>(<span style="color: #800080">$arr</span>);  </pre>
+</div>
+<p>&#xA0;</p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

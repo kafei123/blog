@@ -1,0 +1,301 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/58.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>MUI 单个图片上传预览（拍照+系统相册）：先选择->预览->上 - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="MUI 单个图片上传预览（拍照+系统相册）：先选择->预览->上 - MUI 单个图片上传预览（拍照+系统相册）：先选择->预览->上 - 小罗博客" />
+	<meta name="description" content="MUI 单个图片上传预览（拍照+系统相册）：先选择->预览->上 - MUI 单个图片上传预览（拍照+系统相册）：先选择->预览->上 - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">MUI 单个图片上传预览（拍照+系统相册）：先选择->预览->上</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/6612350.html" target="_black">http://www.cnblogs.com/richerdyoung/p/6612350.html</a></p>
+				 						<div class="detail_div">
+						<p>1 html&#x90E8;&#x5206;</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff">&lt;!</span><span style="color: #ff00ff">DOCTYPE html</span><span style="color: #0000ff">&gt;</span>  
+<span style="color: #0000ff">&lt;</span><span style="color: #800000">html</span><span style="color: #0000ff">&gt;</span>  
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>  
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">meta </span><span style="color: #ff0000">charset</span><span style="color: #0000ff">=&quot;UTF-8&quot;</span><span style="color: #0000ff">&gt;</span>  
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">title</span><span style="color: #0000ff">&gt;</span>  
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">link </span><span style="color: #ff0000">href</span><span style="color: #0000ff">=&quot;../css/mui.min.css&quot;</span><span style="color: #ff0000"> rel</span><span style="color: #0000ff">=&quot;stylesheet&quot;</span> <span style="color: #0000ff">/&gt;</span>  
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/mui.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>  
+        
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script </span><span style="color: #ff0000">src</span><span style="color: #0000ff">=&quot;../js/jquery-1.9.min.js&quot;</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>  
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">style</span><span style="color: #0000ff">&gt;</span><span style="background-color: #f5f5f5; color: #800000">  
+            .imageup</span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000"> width</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff">100px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000"> height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 36px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000"> line-height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff">36px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #000000">}</span><span style="background-color: #f5f5f5; color: #800000">  
+            .button</span><span style="background-color: #f5f5f5; color: #000000">{</span><span style="background-color: #f5f5f5; color: #ff0000">  width</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff">100px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000"> height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff"> 50px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #ff0000"> line-height</span><span style="background-color: #f5f5f5; color: #000000">:</span><span style="background-color: #f5f5f5; color: #0000ff">50px</span><span style="background-color: #f5f5f5; color: #000000">;</span><span style="background-color: #f5f5f5; color: #000000">}</span>  
+        <span style="color: #0000ff">&lt;/</span><span style="color: #800000">style</span><span style="color: #0000ff">&gt;</span>  
+    <span style="color: #0000ff">&lt;/</span><span style="color: #800000">head</span><span style="color: #0000ff">&gt;</span>  
+    <span style="color: #0000ff">&lt;</span><span style="color: #800000">body</span><span style="color: #0000ff">&gt;</span>  
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">img </span><span style="color: #ff0000">id</span><span style="color: #0000ff">=&quot;headimg&quot;</span><span style="color: #ff0000"> src</span><span style="color: #0000ff">=&apos;&apos;  </span><span style="color: #ff0000">height</span><span style="color: #0000ff">=&quot;150&quot;</span><span style="color: #ff0000">  width</span><span style="color: #0000ff">=&quot;150&quot;</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;&lt;</span><span style="color: #800000">a </span><span style="color: #ff0000">href</span><span style="color: #0000ff">=&quot;javascript:;&quot;</span><span style="color: #ff0000"> class</span><span style="color: #0000ff">=&quot;imageup&quot;</span><span style="color: #0000ff">&gt;</span>&#x4E0A;&#x4F20;&#x56FE;&#x7247;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">a</span><span style="color: #0000ff">&gt;</span> <span style="color: #0000ff">&lt;/</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span> 
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;&lt;</span><span style="color: #800000">button </span><span style="color: #ff0000">onclick</span><span style="color: #0000ff">=&quot;upload();&quot;</span><span style="color: #ff0000"> class</span><span style="color: #0000ff">=&apos;button&apos;</span><span style="color: #0000ff">&gt;</span> &#x63D0;&#x4EA4;<span style="color: #0000ff">&lt;/</span><span style="color: #800000">button</span><span style="color: #0000ff">&gt;&lt;/</span><span style="color: #800000">p</span><span style="color: #0000ff">&gt;</span>
+        <span style="color: #0000ff">&lt;</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>  
+            
+            <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> plusReady(){  
+                </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000"> &#x5F39;&#x51FA;&#x7CFB;&#x7EDF;&#x9009;&#x62E9;&#x6309;&#x94AE;&#x6846;  </span>
+<span style="background-color: #f5f5f5; color: #000000">                mui(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">body</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).on(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">tap</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">,</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">.imageup</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">,</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(){  
+                    page.imgUp();  
+                })  
+                  
+            }  
+            </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> page</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #0000ff">null</span><span style="background-color: #f5f5f5; color: #000000">;  
+            page</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">{  
+                imgUp:</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(){  
+                    </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> m</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #0000ff">this</span><span style="background-color: #f5f5f5; color: #000000">;  
+                    plus.nativeUI.actionSheet({cancel:</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x53D6;&#x6D88;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">,buttons:[  
+                        {title:</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x62CD;&#x7167;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">},  
+                        {title:</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x4ECE;&#x76F8;&#x518C;&#x4E2D;&#x9009;&#x62E9;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">}  
+                    ]}, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e){</span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">1 &#x662F;&#x62CD;&#x7167;  2 &#x4ECE;&#x76F8;&#x518C;&#x4E2D;&#x9009;&#x62E9;  </span>
+                        <span style="background-color: #f5f5f5; color: #0000ff">switch</span><span style="background-color: #f5f5f5; color: #000000">(e.index){  
+                            </span><span style="background-color: #f5f5f5; color: #0000ff">case</span> <span style="background-color: #f5f5f5; color: #000000">1</span><span style="background-color: #f5f5f5; color: #000000">:appendByCamera();</span><span style="background-color: #f5f5f5; color: #0000ff">break</span><span style="background-color: #f5f5f5; color: #000000">;  
+                            </span><span style="background-color: #f5f5f5; color: #0000ff">case</span> <span style="background-color: #f5f5f5; color: #000000">2</span><span style="background-color: #f5f5f5; color: #000000">:appendByGallery();</span><span style="background-color: #f5f5f5; color: #0000ff">break</span><span style="background-color: #f5f5f5; color: #000000">;  
+                        }  
+                    });  
+                }  
+                </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x6444;&#x50CF;&#x5934;  </span>
+<span style="background-color: #f5f5f5; color: #000000">            }  
+              
+            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000"> &#x62CD;&#x7167;&#x6DFB;&#x52A0;&#x6587;&#x4EF6;</span>
+            <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> appendByCamera(){
+                plus.camera.getCamera().captureImage(</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e){
+                    console.log(e);
+                    plus.io.resolveLocalFileSystemURL(e, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(entry) { 
+                    </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> path </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> entry.toLocalURL(); 
+                    document.getElementById(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">headimg</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).src </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> path; 
+                    </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x5C31;&#x662F;&#x8FD9;&#x91CC;www.bcty365.com </span>
+<span style="background-color: #f5f5f5; color: #000000">                    }, </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(e) { 
+                        mui.toast(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x8BFB;&#x53D6;&#x62CD;&#x7167;&#x6587;&#x4EF6;&#x9519;&#x8BEF;&#xFF1A;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span> <span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000"> e.message); 
+                    }); 
+    
+                });    
+            }
+            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000"> &#x4ECE;&#x76F8;&#x518C;&#x6DFB;&#x52A0;&#x6587;&#x4EF6;</span>
+            <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> appendByGallery(){
+                plus.gallery.pick(</span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(path){
+                    document.getElementById(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">headimg</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">).src </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> path; 
+
+                });
+            }
+            
+              
+            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x53E3;&#x8DEF;&#x5F84;</span>
+            <span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> server </span><span style="background-color: #f5f5f5; color: #000000">=</span> <span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">http://www.test.cn/aaa.php</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">;
+            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x83B7;&#x53D6;&#x56FE;&#x7247;&#x5143;&#x7D20;</span>
+            <span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> files </span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000"> document.getElementById(</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">headimg</span><span style="background-color: #f5f5f5; color: #000000">&apos;</span><span style="background-color: #f5f5f5; color: #000000">);
+            </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000"> &#x4E0A;&#x4F20;&#x6587;&#x4EF6;</span>
+            <span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000"> upload(){
+                console.log(files.src);
+                </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> wt</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">plus.nativeUI.showWaiting();
+                </span><span style="background-color: #f5f5f5; color: #0000ff">var</span><span style="background-color: #f5f5f5; color: #000000"> task</span><span style="background-color: #f5f5f5; color: #000000">=</span><span style="background-color: #f5f5f5; color: #000000">plus.uploader.createUpload(server,
+                    {method:</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">POST</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">},
+                    </span><span style="background-color: #f5f5f5; color: #0000ff">function</span><span style="background-color: #f5f5f5; color: #000000">(t,status){ </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x4E0A;&#x4F20;&#x5B8C;&#x6210;</span>
+                        <span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(status</span><span style="background-color: #f5f5f5; color: #000000">==</span><span style="background-color: #f5f5f5; color: #000000">200</span><span style="background-color: #f5f5f5; color: #000000">){
+                            alert(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x4E0A;&#x4F20;&#x6210;&#x529F;&#xFF1A;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">t.responseText);
+                            wt.close(); </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x5173;&#x95ED;&#x7B49;&#x5F85;&#x63D0;&#x793A;&#x6309;&#x94AE;</span>
+<span style="background-color: #f5f5f5; color: #000000">                        }</span><span style="background-color: #f5f5f5; color: #0000ff">else</span><span style="background-color: #f5f5f5; color: #000000">{
+                            alert(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">&#x4E0A;&#x4F20;&#x5931;&#x8D25;&#xFF1A;</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">+</span><span style="background-color: #f5f5f5; color: #000000">status);
+                            wt.close();</span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x5173;&#x95ED;&#x7B49;&#x5F85;&#x63D0;&#x793A;&#x6309;&#x94AE;</span>
+<span style="background-color: #f5f5f5; color: #000000">                        }
+                    }
+                );
+                </span><span style="background-color: #f5f5f5; color: #008000">//</span><span style="background-color: #f5f5f5; color: #008000">&#x6DFB;&#x52A0;&#x5176;&#x4ED6;&#x53C2;&#x6570;</span>
+<span style="background-color: #f5f5f5; color: #000000">                task.addData(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">name</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">,</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">test</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">);
+                task.addFile(files.src,{key:</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">dddd</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">});
+                task.start();
+            }  
+            </span><span style="background-color: #f5f5f5; color: #0000ff">if</span><span style="background-color: #f5f5f5; color: #000000">(window.plus){  
+                plusReady();  
+            }</span><span style="background-color: #f5f5f5; color: #0000ff">else</span><span style="background-color: #f5f5f5; color: #000000">{  
+                document.addEventListener(</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">plusready</span><span style="background-color: #f5f5f5; color: #000000">&quot;</span><span style="background-color: #f5f5f5; color: #000000">,plusReady,</span><span style="background-color: #f5f5f5; color: #0000ff">false</span><span style="background-color: #f5f5f5; color: #000000">);  
+            }       
+      
+        
+              
+        </span><span style="color: #0000ff">&lt;/</span><span style="color: #800000">script</span><span style="color: #0000ff">&gt;</span>  
+    <span style="color: #0000ff">&lt;/</span><span style="color: #800000">body</span><span style="color: #0000ff">&gt;</span>   
+<span style="color: #0000ff">&lt;/</span><span style="color: #800000">html</span><span style="color: #0000ff">&gt;</span>  </pre>
+</div>
+<p>&#xA0;</p>
+<p>2 PHP&#x90E8;&#x5206;&#xFF1A;</p>
+<div class="cnblogs_code">
+<pre>&lt;?<span style="color: #000000">php 
+
+
+</span><span style="color: #0000ff">echo</span> &quot;&lt;pre&gt;&quot;<span style="color: #000000">;
+
+</span><span style="color: #008080">print_r</span>(<span style="color: #800080">$_POST</span><span style="color: #000000">);
+
+
+</span><span style="color: #008080">print_r</span>(<span style="color: #800080">$_FILES</span><span style="color: #000000">);
+
+
+
+ </span>?&gt;</pre>
+</div>
+<p>&#xA0;</p>
+<p>3 &#x64CD;&#x4F5C;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<p>&#x4E0A;&#x4F20;&#x56FE;&#x7247;-&#x300B;&#x9009;&#x62E9;&#x62CD;&#x7167;&#x8FD8;&#x662F;&#x7CFB;&#x7EDF;&#x76F8;&#x518C;-&#x300B;&#x63D0;&#x4EA4;</p>
+<p><img src="../../images2015.cnblogs.com/blog/1103071/201703/1103071-20170324165101190-1720731198.html" alt="" width="254" height="337"><img src="../../images2015.cnblogs.com/blog/1103071/201703/1103071-20170324165501236-1571573000.html" alt="" width="286" height="340"></p>
+<p><img src="../../images2015.cnblogs.com/blog/1103071/201703/1103071-20170324165556346-885124146.html" alt="" width="262" height="345"><img src="../../images2015.cnblogs.com/blog/1103071/201703/1103071-20170324165640690-142661065.html" alt="" width="287" height="347"></p>
+<p>&#xA0;</p>
+<p>&#xA0;</p>
+<p>&#x8FD1;&#x671F;&#x6709;&#x5F88;&#x591A;&#x7AE5;&#x978B;&#x5728;&#x505A;&#x7684;&#x65F6;&#x5019;&#x9047;&#x5230;&#x597D;&#x591A;&#x95EE;&#x9898;&#x3002;&#x5728;&#x6B64;&#x63D0;&#x793A;&#x4F60;&#x4E00;&#x4E0B;</p>
+<p>&#xA0;</p>
+<p>1 &#x65B0;&#x5EFA;APP&#x9879;&#x76EE;&#x3002;hello 5+</p>
+<p><img src="../../images2015.cnblogs.com/blog/1103071/201707/1103071-20170725194140341-1723692005.html" alt=""></p>
+<p>2 &#xA0;&#x6CE8;&#x610F;&#x5F15;&#x5165; mui.min.js&#x548C; jq ,&#x65B0;&#x5EFA;&#x8FD9;&#x4E2A;app&#x9879;&#x76EE;&#x91CC;&#x662F;&#x6CA1;&#x6709;&#x7684;&#x3002;&#x4F60;&#x9700;&#x8981;&#x5728;MUI&#x91CC;&#x8FB9;&#x590D;&#x5236;&#x8FC7;&#x6765;&#x3002;</p>
+<p>3 &#x6700;&#x540E;&#x4FEE;&#x6539; &#x670D;&#x52A1;&#x7AEF;&#x63D0;&#x4EA4;&#x8DEF;&#x5F84;&#x3002;&#x5C31;&#x53EF;&#x4EE5;&#x6D4B;&#x8BD5;&#x4E86;&#xFF0C;</p>
+<p><img src="../../images2015.cnblogs.com/blog/1103071/201707/1103071-20170725194516732-611594308.html" alt=""></p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

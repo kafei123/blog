@@ -1,0 +1,212 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/22.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>【VUE】Mac下vue 开发环境搭建，以及目录结构 - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="【VUE】Mac下vue 开发环境搭建，以及目录结构 - 【VUE】Mac下vue 开发环境搭建，以及目录结构 - 小罗博客" />
+	<meta name="description" content="【VUE】Mac下vue 开发环境搭建，以及目录结构 - 【VUE】Mac下vue 开发环境搭建，以及目录结构 - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">【VUE】Mac下vue 开发环境搭建，以及目录结构</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/7199917.html" target="_black">http://www.cnblogs.com/richerdyoung/p/7199917.html</a></p>
+				 						<div class="detail_div">
+						<p>1&#xA0;&#x5B89;&#x88C5;Node.js</p>
+<p>&#xA0; &#xA0;&#x53C2;&#x770B; node.js&#x73AF;&#x5883;&#x5B89;&#x88C5;<br>&#xA0; &#xA0;http://www.cnblogs.com/richerdyoung/p/7265786.html</p>
+<p>&#xA0;</p>
+<p>2&#xA0;&#x5B89;&#x88C5;&#x6DD8;&#x5B9D;&#x955C;&#x50CF;</p>
+<div class="cnblogs_code">
+<pre>npm install -g cnpm --registry=https:<span style="color: #008000">//</span><span style="color: #008000">registry.npm.taobao.org </span></pre>
+</div>
+<p>3&#xA0;&#x5B89;&#x88C5;&#x5168;&#x5C40;vue-cli&#x811A;&#x624B;&#x67B6;,&#x7528;&#x4E8E;&#x5E2E;&#x52A9;&#x642D;&#x5EFA;&#x6240;&#x9700;&#x7684;&#x6A21;&#x677F;&#x6846;&#x67B6;</p>
+<div class="cnblogs_code">
+<pre>cnpm install -g vue-cli</pre>
+</div>
+<p>&#x8F93;&#x5165;&#xFF1A;vue&#xFF0C;&#x56DE;&#x8F66;&#xFF0C;&#x82E5;&#x51FA;&#x73B0;vue&#x4FE1;&#x606F;&#x8BF4;&#x660E;&#x8868;&#x793A;&#x6210;&#x529F;</p>
+<p><img src="../../images2017.cnblogs.com/blog/1103071/201707/1103071-20170731213411693-1936432373.html" alt=""></p>
+<p>4&#xA0;&#x5207;&#x6362;&#x5230;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x76EE;&#x5F55;</p>
+<div class="cnblogs_code">
+<pre>cd desktop/vue</pre>
+</div>
+<p>5&#xA0;&#x65B0;&#x5EFA;vue&#x9879;&#x76EE;</p>
+<div class="cnblogs_code">
+<pre>vue init webpack vuetest </pre>
+</div>
+<p>6&#xA0;&#x4E00;&#x8DEF;&#x56DE;&#x8F66;&#xFF08;&#x7B2C;4&#x6B65;ESLint &#x53EF;&#x4EE5;&#x4E00;&#x8DEF;n&#xFF0C;&#x5927;&#x5E08;&#x8BF7;&#x5FFD;&#x7565;n&#xFF09;<br>&#xA0;<img src="../../images2017.cnblogs.com/blog/1103071/201707/1103071-20170731214105740-1809377076.html" alt=""></p>
+<p><br>&#x8FDB;&#x5165;&#x65B0;&#x5EFA;&#x9879;&#x76EE;</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000">cd vuetest 
+
+cnpm install 
+
+npm run dev</span></pre>
+</div>
+<p>&#xA0;<img src="../../images2017.cnblogs.com/blog/1103071/201707/1103071-20170731214315646-111817109.html" alt=""></p>
+<p><img src="../../images2017.cnblogs.com/blog/1103071/201707/1103071-20170731214430615-221712398.html" alt=""></p>
+<p><img src="../../images2017.cnblogs.com/blog/1103071/201707/1103071-20170731214539740-1122948284.html" alt=""></p>
+<p>&#xA0;</p>
+<p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;</p>
+<p><img src="../../images2017.cnblogs.com/blog/1103071/201708/1103071-20170831155941765-598769679.html" alt=""></p>
+<p>&#xA0;</p>
+<ul>
+<li>&#xA0;main.js &#x662F;&#x6211;&#x4EEC;&#x7684;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x521D;&#x59CB;&#x5316;vue&#x5B9E;&#x4F8B;&#x5E76;&#x4F7F;&#x7528;&#x9700;&#x8981;&#x7684;&#x63D2;&#x4EF6; </li>
+<li>App.vue&#x662F;&#x6211;&#x4EEC;&#x7684;&#x4E3B;&#x7EC4;&#x4EF6;&#xFF0C;&#x6240;&#x6709;&#x9875;&#x9762;&#x90FD;&#x662F;&#x5728;App.vue&#x4E0B;&#x8FDB;&#x884C;&#x5207;&#x6362;&#x7684;&#x3002;&#x5176;&#x5B9E;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x6240;&#x6709;&#x7684;&#x8DEF;&#x7531;&#x4E5F;&#x662F;App.vue&#x7684;&#x5B50;&#x7EC4;&#x4EF6;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x5C06;router&#x6807;&#x793A;&#x4E3A;App.vue&#x7684;&#x5B50;&#x7EC4;&#x4EF6;&#x3002;</li>
+<li> index.html&#x6587;&#x4EF6;&#x5165;&#x53E3; </li>
+<li>src&#x653E;&#x7F6E;&#x7EC4;&#x4EF6;&#x548C;&#x5165;&#x53E3;&#x6587;&#x4EF6;</li>
+<li> node_modules&#x4E3A;&#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757; </li>
+<li>config&#x4E2D;&#x914D;&#x7F6E;&#x4E86;&#x8DEF;&#x5F84;&#x7AEF;&#x53E3;&#x503C;&#x7B49; </li>
+<li>build&#x4E2D;&#x914D;&#x7F6E;&#x4E86;</li>
+<li>webpack&#x7684;&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x3001;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x3001;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x7B49;</li>
+</ul>
+<p>&#xA0;</p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

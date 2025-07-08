@@ -1,0 +1,217 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/36.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>【golang】 go语言之环境搭建+ 第一个go语言程序 - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="【golang】 go语言之环境搭建+ 第一个go语言程序 - 【golang】 go语言之环境搭建+ 第一个go语言程序 - 小罗博客" />
+	<meta name="description" content="【golang】 go语言之环境搭建+ 第一个go语言程序 - 【golang】 go语言之环境搭建+ 第一个go语言程序 - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">【golang】 go语言之环境搭建+ 第一个go语言程序</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/6875084.html" target="_black">http://www.cnblogs.com/richerdyoung/p/6875084.html</a></p>
+				 						<div class="detail_div">
+						<p>1 &#x4E0B;&#x8F7D;&#xFF1A;http://www.golangtc.com/download &#xFF08;&#x4EE5;win&#x4E3A;&#x4F8B;&#xFF09;</p>
+<p><img src="../../images2015.cnblogs.com/blog/1103071/201705/1103071-20170518185044103-96579241.html" alt=""></p>
+<p>2 &#x5B89;&#x88C5;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ul>
+<li>&#xA0;&#x5B89;&#x88C5;&#x5305;&#xFF1A; go1.8.windows-amd64.msi</li>
+<li>&#xA0;&#x53CC;&#x51FB;&#x8FDB;&#x884C;&#x5B89;&#x88C5;</li>
+<li>&#xA0;&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55; &#xFF1A;D:\Go</li>
+<li>&#xA0;&#x8FDB;&#x884C;&#x5E38;&#x91CF;&#x914D;&#x7F6E;&#xFF1A; &#x8BA1;&#x7B97;&#x673A;-&#x53F3;&#x952E;&#x5C5E;&#x6027;-&gt;&#x9AD8;&#x7EA7;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;-&gt;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A; &#x914D;&#x7F6E;GOPATH &#x548C; GOROOT</li>
+<li>&#xA0;&#x5728;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;Path&#x4E2D;&#x52A0;&#x4E0A; D:\Go\bin &#x8FDB;&#x884C;&#x4FDD;&#x5B58;</li>
+</ul>
+<p>3 &#x914D;&#x7F6E;&#xFF1A;</p>
+<p>&#xA0; &#xA0;GOROOT &#xFF1A; GO &#x8BED;&#x8A00;&#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55; &#xA0;</p>
+<p>&#xA0; &#xA0;GOPATH&#xFF1A; &#xA0; GO&#x8BED;&#x8A00;&#x7684;Package&#x76EE;&#x5F55;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;GO&#x8BED;&#x8A00;&#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E2D; &#xA0;</p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000; &#x9700;&#x8981;&#x914D;&#x7F6E;&#x591A;&#x4E2A;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x65F6;&#xFF0C;&#x7528;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x5BF9;&#x8DEF;&#x5F84;&#x8FDB;&#x884C;&#x5206;&#x5272;&#xFF0C;</p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x4F8B;&#x5982;&#xFF1A; D:\gowork\mygo;D:\gowork\go2</p>
+<p>&#x3000;&#x3000;<img src="../../images2015.cnblogs.com/blog/1103071/201705/1103071-20170518185705682-2045649789.html" alt=""></p>
+<p>&#x3000;&#x3000;<img src="../../images2015.cnblogs.com/blog/1103071/201705/1103071-20170518185728807-669562761.html" alt=""></p>
+<p>&#xA0;4 &#xA0;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF1A;</p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;gowrok/mygo/src &#xA0;&#x7F16;&#x7801;&#x6240;&#x5728;&#x6587;&#x4EF6;&#x5939;</p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;gowork/mygo/pkg &#x7F16;&#x8BD1;&#x5305;&#x6240;&#x5728;&#x6587;&#x4EF6;&#x5939;</p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;gowork/mygo/bin &#xA0;&#x7F16;&#x8BD1;&#x540E;&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x6587;&#x4EF6;&#x5939;</p>
+<p>&#xA0;</p>
+<p>5 &#x7B2C;&#x4E00;&#x4E2A;go&#x7A0B;&#x5E8F;</p>
+<p>&#xA0; &#xA0; &#x65B0;&#x5EFA;&#x9879;&#x76EE;&#xFF1A; &#x5728;GOPATH&#x6240;&#x8BBE;&#x7F6E;&#x7684;&#x67D0;&#x4E00;&#x8DEF;&#x5F84;&#x4E0B;&#x7684;src&#x6587;&#x4EF6;&#x5939;&#x5185;&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;hellogo</p>
+<p>&#xA0; &#xA0; &#x5728;hellogo&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;main.go</p>
+<p>&#xA0; &#xA0; &#x5728;main.go&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;</p>
+<div class="cnblogs_code">
+<pre>package  main   <span style="color: #008000">//</span><span style="color: #008000">&#x5305;&#x540D;&#xFF0C;&#x4E3B;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x4E3A;main</span>
+<span style="color: #000000">
+import </span>&quot;fmt&quot;  <span style="color: #008000">//</span><span style="color: #008000">&#x5F15;&#x5165;&#x5305;&#xFF0C;&#x88AB;&#x4F7F;&#x7528;&#x7684;&#x5305;&#x5FC5;&#x987B;&#x5148;&#x5F15;&#x5165;</span>
+<span style="color: #000000">
+func main() { </span><span style="color: #008000">//</span><span style="color: #008000">&#x4E3B;&#x51FD;&#x6570;&#xFF0C;&#x7A0B;&#x5E8F;&#x5165;&#x53E3;</span>
+     fmt.Println(&quot;hello go by richerdyoung&quot;<span style="color: #000000">)
+
+}</span></pre>
+</div>
+<p>6 &#x7F16;&#x8BD1;&#x8FD0;&#x884C;</p>
+<p>&#xA0; &#xA0; cmd&#x547D;&#x4EE4;&#x6A21;&#x5F0F; &#xA0;&#x8FDB;&#x5165;main.go&#x6240;&#x5728;&#x76EE;&#x5F55; &#xA0;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;</p>
+<div class="cnblogs_code">
+<pre>go install</pre>
+</div>
+<p>&#xA0; &#x8FDB;&#x5165;&#x9879;&#x76EE;bin&#x76EE;&#x5F55;&#x4E0B;&#x53EF;&#x770B;&#x5230;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0;&#xA0;<img src="../../images2015.cnblogs.com/blog/1103071/201705/1103071-20170518190355244-2057300009.html" alt=""></p>
+<p>&#xA0;cmd&#x6A21;&#x5F0F;&#x8FDB;&#x5165;bin&#x76EE;&#x5F55; &#x8F93;&#x5165;&#xA0;</p>
+<div class="cnblogs_code">
+<pre>hellogo</pre>
+</div>
+<p>&#x7ED3;&#x679C;&#x5982;&#x56FE;&#xFF1A;</p>
+<p><img src="../../images2015.cnblogs.com/blog/1103071/201705/1103071-20170518190458510-2066584063.html" alt=""></p>
+<p>&#xA0;</p>
+<p>&#xA0;&#x9047;&#x5230;&#x95EE;&#x9898;&#xFF1A; path &#x8BBE;&#x7F6E;&#x65F6;&#x5019;&#x3002;&#x8981;&#x5199;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;&#x4E0D;&#x7136;&#x63D0;&#x793A;&#x62A5;&#x9519;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0;</p>
+<p>&#xA0;</p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	

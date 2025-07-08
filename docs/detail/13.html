@@ -1,0 +1,329 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from blog.dev.3d66.com/detail/13.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 08:22:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>【Base64】用 js 编 解 码 base64 - 小罗博客</title>
+	<link href="../public/Home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../public/Home/css/base.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="【Base64】用 js 编 解 码 base64 - 【Base64】用 js 编 解 码 base64 - 小罗博客" />
+	<meta name="description" content="【Base64】用 js 编 解 码 base64 - 【Base64】用 js 编 解 码 base64 - 小罗博客" />
+	<!----webfonts---->
+		<!----//webfonts---->
+		  <script src="../public/Home/js/jquery.min.js"></script>
+		<!--end slider -->
+		<!--script-->
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---header---->			
+<div class="header">  
+	<div class="header_top">
+		<div class="container">
+			<div class="header_top_l">
+				<p>Hi！欢迎来到 <span class="author">咖啡屋的少年（小罗）</span> 的博客<span class="qq_group">技术交流QQ群：上海php（592152335）、代码改变世界（453011886）</span></p>
+			</div>
+			<div class="header_top_r">
+				<!-- <p>
+					<a href="/login.html">登录</a>
+					<a href="/register.html">注册</a>
+				</p> -->
+			</div>
+		</div>
+	</div>
+	 <div class="container" style="margin-bottom:20px">
+		  <div class="logo">
+			  <a href="index.html"><img src="../public/Home/images/logo.png" title="" /></a>
+		  </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				 
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="../index.html">首页</a></li>
+						<li ><a href="../list/PHP.html">PHP</a></li>
+						<li ><a href="../list/HTML.html">前端</a></li>
+						<li ><a href="../list/linux.html">Linux</a></li>
+						<li ><a href="../list/Seo.html">SEO</a></li>
+						<li ><a href="../list/mysql.html">MySql</a></li>
+						<li ><a href="../list/redis.html">Redis</a></li>
+						<li ><a href="../list/Other.html">其他</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+					</script>
+				<!---//End-top-nav---->					
+	 </div>
+</div>
+
+    
+<!--/header-->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+				 	<h4 class="detail-title">【Base64】用 js 编 解 码 base64</h4>
+				 	<div class="detail-time">
+				 		<p class="post-info-time">2017-09-16 13:14:24 <span>依然范儿特西</span>阅读(0) <span>点赞(0)</span> <span>评论(0)</span></p>
+				 	</div>
+				 					 		<p class="reprint">本文为转载文章，如有侵权，请联系博主。原文链接：<a href="http://www.cnblogs.com/richerdyoung/p/7337465.html" target="_black">http://www.cnblogs.com/richerdyoung/p/7337465.html</a></p>
+				 						<div class="detail_div">
+						<p><strong>&#x7406;&#x8BBA;&#x8865;&#x5145;&#xFF1A;&#xA0;</strong></p>
+<p><strong>Base64</strong>&#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;64&#x4E2A;&#x53EF;&#x6253;&#x5370;&#x5B57;&#x7B26;&#x6765;&#x8868;&#x793A;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x7531;&#x4E8E;2&#x7684;6&#x6B21;&#x65B9;&#x7B49;&#x4E8E;64&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;6&#x4E2A;&#x6BD4;&#x7279;&#x4E3A;&#x4E00;&#x4E2A;&#x5355;&#x5143;&#xFF0C;&#x5BF9;&#x5E94;&#x67D0;&#x4E2A;&#x53EF;&#x6253;&#x5370;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x4E09;&#x4E2A;&#x5B57;&#x8282;&#x6709;24&#x4E2A;&#x6BD4;&#x7279;&#xFF0C;&#x5BF9;&#x5E94;&#x4E8E;4&#x4E2A;Base64&#x5355;&#x5143;&#xFF0C;&#x5373;3&#x4E2A;&#x5B57;&#x8282;&#x9700;&#x8981;&#x7528;4&#x4E2A;&#x53EF;&#x6253;&#x5370;&#x5B57;&#x7B26;&#x6765;&#x8868;&#x793A;&#x3002;&#x5B83;&#x53EF;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;&#x4F20;&#x8F93;&#x7F16;&#x7801;&#x3002;</p>
+<p>&#x5728;Base64&#x4E2D;&#x7684;&#x53EF;&#x6253;&#x5370;&#x5B57;&#x7B26;&#x5305;&#x62EC;&#x5B57;&#x6BCD;A-Z&#x3001;a-z&#x3001;&#x6570;&#x5B57;0-9 &#xFF0C;&#x8FD9;&#x6837;&#x5171;&#x6709;62&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x6B64;&#x5916;&#x4E24;&#x4E2A;&#x53EF;&#x6253;&#x5370;&#x7B26;&#x53F7;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x800C;&#x4E0D;&#x540C;<strong>&#xFF08;&#x672C;&#x7C7B;&#x5E93;&#x91CC;&#x9762;&#x7528;&#x7684;&#x662F;`+`,`/`&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#xFF09;</strong>&#x3002;</p>
+<p>&#x4E00;&#x4E9B;&#x5982;uuencode&#x7684;&#x5176;&#x4ED6;&#x7F16;&#x7801;&#x65B9;&#x6CD5;&#xFF0C;&#x548C;&#x4E4B;&#x540E;binhex&#x7684;&#x7248;&#x672C;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;64&#x5B57;&#x7B26;&#x96C6;&#x6765;&#x4EE3;&#x8868;6&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x5B57;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x4E0D;&#x53EB;Base64&#x3002;</p>
+<p>Base64&#x5E38;&#x7528;&#x4E8E;&#x5728;&#x901A;&#x5E38;&#x5904;&#x7406;&#x6587;&#x672C;&#x6570;&#x636E;&#x7684;&#x573A;&#x5408;&#xFF0C;&#x8868;&#x793A;&#x3001;&#x4F20;&#x8F93;&#x3001;&#x5B58;&#x50A8;&#x4E00;&#x4E9B;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002;&#x5305;&#x62EC;MIME&#x7684;email&#xFF0C;email via MIME, &#x5728;XML&#x4E2D;&#x5B58;&#x50A8;&#x590D;&#x6742;&#x6570;&#x636E;.</p>
+<p>&#xA0;</p>
+<p><strong>&#x7F16;&#x7801;&#x89C4;&#x5219;&#xFF1A;</strong></p>
+<p>Base64&#x7F16;&#x7801;&#x7684;&#x601D;&#x60F3;&#x662F;&#x662F;&#x91C7;&#x7528;64&#x4E2A;&#x57FA;&#x672C;&#x7684;ASCII&#x7801;&#x5B57;&#x7B26;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x7F16;&#x7801;&#x3002;&#x5B83;&#x5C06;&#x9700;&#x8981;&#x7F16;&#x7801;&#x7684;&#x6570;&#x636E;&#x62C6;&#x5206;&#x6210;&#x5B57;&#x8282;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x4EE5;3&#x4E2A;&#x5B57;&#x8282;&#x4E3A;&#x4E00;&#x7EC4;&#x3002;&#x6309;&#x987A;&#x5E8F;&#x6392;&#x5217;24 &#x4F4D;&#x6570;&#x636E;&#xFF0C;&#x518D;&#x628A;&#x8FD9;24&#x4F4D;&#x6570;&#x636E;&#x5206;&#x6210;4&#x7EC4;&#xFF0C;&#x5373;&#x6BCF;&#x7EC4;6&#x4F4D;&#x3002;</p>
+<p>&#x518D;&#x5728;&#x6BCF;&#x7EC4;&#x7684;&#x7684;&#x6700;&#x9AD8;&#x4F4D;&#x524D;&#x8865;&#x4E24;&#x4E2A;0&#x51D1;&#x8DB3;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x628A;&#x4E00;&#x4E2A;3&#x5B57;&#x8282;&#x4E3A;&#x4E00;&#x7EC4;&#x7684;&#x6570;&#x636E;&#x91CD;&#x65B0;&#x7F16;&#x7801;&#x6210;&#x4E86;4&#x4E2A;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x5F53;&#x6240;&#x8981;&#x7F16;&#x7801;&#x7684;&#x6570;&#x636E;&#x7684;&#x5B57;&#x8282;&#x6570;&#x4E0D;&#x662F;3&#x7684;&#x6574;&#x500D;&#x6570;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5728;&#x5206;&#x7EC4;&#x65F6;&#x6700;&#x540E;&#x4E00;&#x7EC4;&#x4E0D;&#x591F;3&#x4E2A;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x8FD9;&#x65F6;&#x5728;&#x6700;&#x540E;&#x4E00;&#x7EC4;&#x586B;&#x5145;1&#x5230;2&#x4E2A;0&#x5B57;&#x8282;&#x3002;&#x5E76;&#x5728;&#x6700;&#x540E;&#x7F16;&#x7801;&#x5B8C;&#x6210;&#x540E;&#x5728;&#x7ED3;&#x5C3E;&#x6DFB;&#x52A0;1&#x5230;2&#x4E2A; &#x201C;=&#x201D;&#x3002;</p>
+<p>&#xA0;</p>
+<p><strong>&#x5B9E;&#x73B0;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
+<div class="cnblogs_code">
+<pre>     <span style="color: #008000">//</span><span style="color: #008000">&#x4E0B;&#x9762;&#x662F;64&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x7F16;&#x7801;</span>
+     <span style="color: #0000ff">var</span> base64EncodeChars = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&quot;<span style="color: #000000">;
+     </span><span style="color: #0000ff">var</span> base64DecodeChars = <span style="color: #0000ff">new</span><span style="color: #000000"> Array(
+         </span>-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1<span style="color: #000000">,
+         </span>-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1<span style="color: #000000">,
+         </span>-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, 63<span style="color: #000000">,
+         </span>52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -1, -1, -1<span style="color: #000000">,
+         </span>-1,  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14<span style="color: #000000">,
+         </span>15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1<span style="color: #000000">,
+        </span>-1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40<span style="color: #000000">,
+        </span>41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1<span style="color: #000000">);
+    </span><span style="color: #008000">//</span><span style="color: #008000">&#x7F16;&#x7801;&#x7684;&#x65B9;&#x6CD5;</span>
+    <span style="color: #0000ff">function</span><span style="color: #000000"> base64encode(str) {
+        </span><span style="color: #0000ff">var</span><span style="color: #000000"> out, i, len;
+        </span><span style="color: #0000ff">var</span><span style="color: #000000"> c1, c2, c3;
+        len </span>=<span style="color: #000000"> str.length;
+        i </span>= 0<span style="color: #000000">;
+        out </span>= &quot;&quot;<span style="color: #000000">;
+        </span><span style="color: #0000ff">while</span>(i &lt;<span style="color: #000000"> len) {
+        c1 </span>= str.charCodeAt(i++) &amp; 0xff<span style="color: #000000">;
+        </span><span style="color: #0000ff">if</span>(i ==<span style="color: #000000"> len)
+        {
+            out </span>+= base64EncodeChars.charAt(c1 &gt;&gt; 2<span style="color: #000000">);
+            out </span>+= base64EncodeChars.charAt((c1 &amp; 0x3) &lt;&lt; 4<span style="color: #000000">);
+            out </span>+= &quot;==&quot;<span style="color: #000000">;
+            </span><span style="color: #0000ff">break</span><span style="color: #000000">;
+        }
+        c2 </span>= str.charCodeAt(i++<span style="color: #000000">);
+        </span><span style="color: #0000ff">if</span>(i ==<span style="color: #000000"> len)
+        {
+            out </span>+= base64EncodeChars.charAt(c1 &gt;&gt; 2<span style="color: #000000">);
+            out </span>+= base64EncodeChars.charAt(((c1 &amp; 0x3)&lt;&lt; 4) | ((c2 &amp; 0xF0) &gt;&gt; 4<span style="color: #000000">));
+            out </span>+= base64EncodeChars.charAt((c2 &amp; 0xF) &lt;&lt; 2<span style="color: #000000">);
+            out </span>+= &quot;=&quot;<span style="color: #000000">;
+            </span><span style="color: #0000ff">break</span><span style="color: #000000">;
+        }
+        c3 </span>= str.charCodeAt(i++<span style="color: #000000">);
+        out </span>+= base64EncodeChars.charAt(c1 &gt;&gt; 2<span style="color: #000000">);
+        out </span>+= base64EncodeChars.charAt(((c1 &amp; 0x3)&lt;&lt; 4) | ((c2 &amp; 0xF0) &gt;&gt; 4<span style="color: #000000">));
+        out </span>+= base64EncodeChars.charAt(((c2 &amp; 0xF) &lt;&lt; 2) | ((c3 &amp; 0xC0) &gt;&gt;6<span style="color: #000000">));
+        out </span>+= base64EncodeChars.charAt(c3 &amp; 0x3F<span style="color: #000000">);
+        }
+        </span><span style="color: #0000ff">return</span><span style="color: #000000"> out;
+    }
+    </span><span style="color: #008000">//</span><span style="color: #008000">&#x89E3;&#x7801;&#x7684;&#x65B9;&#x6CD5;</span>
+    <span style="color: #0000ff">function</span><span style="color: #000000"> base64decode(str) {
+        </span><span style="color: #0000ff">var</span><span style="color: #000000"> c1, c2, c3, c4;
+        </span><span style="color: #0000ff">var</span><span style="color: #000000"> i, len, out;
+        len </span>=<span style="color: #000000"> str.length;
+        i </span>= 0<span style="color: #000000">;
+        out </span>= &quot;&quot;<span style="color: #000000">;
+        </span><span style="color: #0000ff">while</span>(i &lt;<span style="color: #000000"> len) {
+        
+        </span><span style="color: #0000ff">do</span><span style="color: #000000"> {
+            c1 </span>= base64DecodeChars[str.charCodeAt(i++) &amp; 0xff<span style="color: #000000">];
+        } </span><span style="color: #0000ff">while</span>(i &lt; len &amp;&amp; c1 == -1<span style="color: #000000">);
+        </span><span style="color: #0000ff">if</span>(c1 == -1<span style="color: #000000">)
+            </span><span style="color: #0000ff">break</span><span style="color: #000000">;
+        
+        </span><span style="color: #0000ff">do</span><span style="color: #000000"> {
+            c2 </span>= base64DecodeChars[str.charCodeAt(i++) &amp; 0xff<span style="color: #000000">];
+        } </span><span style="color: #0000ff">while</span>(i &lt; len &amp;&amp; c2 == -1<span style="color: #000000">);
+        </span><span style="color: #0000ff">if</span>(c2 == -1<span style="color: #000000">)
+            </span><span style="color: #0000ff">break</span><span style="color: #000000">;
+        out </span>+= String.fromCharCode((c1 &lt;&lt; 2) | ((c2 &amp; 0x30) &gt;&gt; 4<span style="color: #000000">));
+        
+        </span><span style="color: #0000ff">do</span><span style="color: #000000"> {
+            c3 </span>= str.charCodeAt(i++) &amp; 0xff<span style="color: #000000">;
+            </span><span style="color: #0000ff">if</span>(c3 == 61<span style="color: #000000">)
+            </span><span style="color: #0000ff">return</span><span style="color: #000000"> out;
+            c3 </span>=<span style="color: #000000"> base64DecodeChars[c3];
+        } </span><span style="color: #0000ff">while</span>(i &lt; len &amp;&amp; c3 == -1<span style="color: #000000">);
+        </span><span style="color: #0000ff">if</span>(c3 == -1<span style="color: #000000">)
+            </span><span style="color: #0000ff">break</span><span style="color: #000000">;
+        out </span>+= String.fromCharCode(((c2 &amp; 0XF) &lt;&lt; 4) | ((c3 &amp; 0x3C) &gt;&gt; 2<span style="color: #000000">));
+        
+        </span><span style="color: #0000ff">do</span><span style="color: #000000"> {
+            c4 </span>= str.charCodeAt(i++) &amp; 0xff<span style="color: #000000">;
+            </span><span style="color: #0000ff">if</span>(c4 == 61<span style="color: #000000">)
+            </span><span style="color: #0000ff">return</span><span style="color: #000000"> out;
+            c4 </span>=<span style="color: #000000"> base64DecodeChars[c4];
+        } </span><span style="color: #0000ff">while</span>(i &lt; len &amp;&amp; c4 == -1<span style="color: #000000">);
+        </span><span style="color: #0000ff">if</span>(c4 == -1<span style="color: #000000">)
+            </span><span style="color: #0000ff">break</span><span style="color: #000000">;
+        out </span>+= String.fromCharCode(((c3 &amp; 0x03) &lt;&lt; 6) |<span style="color: #000000"> c4);
+        }
+        </span><span style="color: #0000ff">return</span><span style="color: #000000"> out;
+    }
+    </span><span style="color: #0000ff">function</span><span style="color: #000000"> utf16to8(str) {
+        </span><span style="color: #0000ff">var</span><span style="color: #000000"> out, i, len, c;
+        out </span>= &quot;&quot;<span style="color: #000000">;
+        len </span>=<span style="color: #000000"> str.length;
+        </span><span style="color: #0000ff">for</span>(i = 0; i &lt; len; i++<span style="color: #000000">) {
+        c </span>=<span style="color: #000000"> str.charCodeAt(i);
+        </span><span style="color: #0000ff">if</span> ((c &gt;= 0x0001) &amp;&amp; (c &lt;= 0x007F<span style="color: #000000">)) {
+            out </span>+=<span style="color: #000000"> str.charAt(i);
+        } </span><span style="color: #0000ff">else</span> <span style="color: #0000ff">if</span> (c &gt; 0x07FF<span style="color: #000000">) {
+            out </span>+= String.fromCharCode(0xE0 | ((c &gt;&gt; 12) &amp; 0x0F<span style="color: #000000">));
+            out </span>+= String.fromCharCode(0x80 | ((c &gt;&gt;  6) &amp; 0x3F<span style="color: #000000">));
+           out </span>+= String.fromCharCode(0x80 | ((c &gt;&gt;  0) &amp; 0x3F<span style="color: #000000">));
+       } </span><span style="color: #0000ff">else</span><span style="color: #000000"> {
+           out </span>+= String.fromCharCode(0xC0 | ((c &gt;&gt;  6) &amp; 0x1F<span style="color: #000000">));
+           out </span>+= String.fromCharCode(0x80 | ((c &gt;&gt;  0) &amp; 0x3F<span style="color: #000000">));
+       }
+       }
+       </span><span style="color: #0000ff">return</span><span style="color: #000000"> out;
+   }
+   </span><span style="color: #0000ff">function</span><span style="color: #000000"> utf8to16(str) {
+       </span><span style="color: #0000ff">var</span><span style="color: #000000"> out, i, len, c;
+       </span><span style="color: #0000ff">var</span><span style="color: #000000"> char2, char3;
+       out </span>= &quot;&quot;<span style="color: #000000">;
+       len </span>=<span style="color: #000000"> str.length;
+       i </span>= 0<span style="color: #000000">;
+       </span><span style="color: #0000ff">while</span>(i &lt;<span style="color: #000000"> len) {
+       c </span>= str.charCodeAt(i++<span style="color: #000000">);
+       </span><span style="color: #0000ff">switch</span>(c &gt;&gt; 4<span style="color: #000000">)
+       { 
+         </span><span style="color: #0000ff">case</span> 0: <span style="color: #0000ff">case</span> 1: <span style="color: #0000ff">case</span> 2: <span style="color: #0000ff">case</span> 3: <span style="color: #0000ff">case</span> 4: <span style="color: #0000ff">case</span> 5: <span style="color: #0000ff">case</span> 6: <span style="color: #0000ff">case</span> 7<span style="color: #000000">:
+           </span><span style="color: #008000">//</span><span style="color: #008000"> 0xxxxxxx</span>
+           out += str.charAt(i-1<span style="color: #000000">);
+           </span><span style="color: #0000ff">break</span><span style="color: #000000">;
+          </span><span style="color: #0000ff">case</span> 12: <span style="color: #0000ff">case</span> 13<span style="color: #000000">:
+           </span><span style="color: #008000">//</span><span style="color: #008000"> 110x xxxx   10xx xxxx</span>
+           char2 = str.charCodeAt(i++<span style="color: #000000">);
+           out </span>+= String.fromCharCode(((c &amp; 0x1F) &lt;&lt; 6) | (char2 &amp; 0x3F<span style="color: #000000">));
+           </span><span style="color: #0000ff">break</span><span style="color: #000000">;
+         </span><span style="color: #0000ff">case</span> 14<span style="color: #000000">:
+           </span><span style="color: #008000">//</span><span style="color: #008000"> 1110 xxxx  10xx xxxx  10xx xxxx</span>
+           char2 = str.charCodeAt(i++<span style="color: #000000">);
+           char3 </span>= str.charCodeAt(i++<span style="color: #000000">);
+           out </span>+= String.fromCharCode(((c &amp; 0x0F) &lt;&lt; 12) |<span style="color: #000000">
+                          ((char2 </span>&amp; 0x3F) &lt;&lt; 6) |<span style="color: #000000">
+                          ((char3 </span>&amp; 0x3F) &lt;&lt; 0<span style="color: #000000">));
+          </span><span style="color: #0000ff">break</span><span style="color: #000000">;
+       }
+       }
+       </span><span style="color: #0000ff">return</span><span style="color: #000000"> out;
+  }</span></pre>
+</div>
+<pre><strong>&#x8C03;&#x7528;&#xFF1A;</strong><br><br></pre>
+<div class="cnblogs_code">
+<pre><span style="color: #008000">//</span><span style="color: #008000">&#x7F16;&#x7801;</span>
+value =<span style="color: #000000"> base64encode(utf16to8(src))
+     
+</span><span style="color: #008000">//</span><span style="color: #008000">&#x89E3;&#x7801;</span>
+value = utf8to16(base64decode(src))</pre>
+</div>
+<p>&#xA0;</p>					</div> 
+				 </div>
+			  </div>
+			<div class="col-md-4 content-right">
+			  	 <div class="recent">
+					 <h3>站内搜索</h3>
+					 <div class="search">
+						 <form action="http://blog.dev.3d66.com/search.html" method="get">
+						 <input type="text" name="keywords" placeholder="请输入关键字" required="">
+						 <input type="submit" value=""/>
+						 </form>
+					 </div>
+				 </div>
+				 <div class="recent">
+					 <h3>热门文章</h3>
+					 <ul>
+													<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="4.html">【Linux】 ftp  主动被动模式</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="7.html">【Redis】php+redis实现消息队列</a></li>
+													<li><a href="9.html">【PHP】 php实现字符串反转：支持中英文</a></li>
+													<li><a href="11.html">【Laravel】Mac下玩转Laravel</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="13.html">【Base64】用 js 编 解 码 base64</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>推荐文章</h3>
+					 <ul>
+					 								<li><a href="1.html">【go】用Golang的 http 包建立 Web 服务器</a></li>
+													<li><a href="2.html">【go】go语言socket通信样例</a></li>
+													<li><a href="3.html">【linux】Centos下登陆mysql报错#1045 - A</a></li>
+													<li><a href="5.html">【linux】安装rar，并解压被压缩成多个rar的文件</a></li>
+													<li><a href="6.html">【Linux】WinSCP普通用户登录sftp后切换到root权</a></li>
+													<li><a href="8.html">【mysql】mysql front 提示Access viol</a></li>
+													<li><a href="10.html">【短信接口】阿里大于迁移到阿里云之后使用方法</a></li>
+													<li><a href="12.html">【PHP】 判断是否微信内置浏览器</a></li>
+													<li><a href="14.html">【ecshop】调用购物车商品数量</a></li>
+													<li><a href="16.html">【Twitter接口】网站嵌入推特信息</a></li>
+											 </ul>
+				 </div>
+				 <div class="recent">
+					 <h3>友情链接</h3>
+					 <ul>
+						<li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+						<li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+						<li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+					 </ul>
+				 </div>
+				 <div class="clearfix"></div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+
+	
+
+
+<!---->
+<div class="footer">
+	
+	 <div class="container">
+		 <p>欢迎来到小罗博客<a style="margin-left: 20px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号：粤ICP备18091111号-1</a></p>
+	 </div>
+</div>	
